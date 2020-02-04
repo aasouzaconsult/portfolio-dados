@@ -15,6 +15,7 @@ Encontrará:
 | ------------ | ------------         | ------------ | ------------    |------------    |
 | **Cluster de Escolas** | Em DEV | Python | | |
 | **Previsão de Vendas** | Em DEV | Python | | |
+| **Coronavirus OnLine**| [Link](https://pessoalex.wordpress.com/2020/02/04/monitoramento-online-do-coronavirus-usando-powerbi/)| Power BI | [NCBI](https://www.ncbi.nlm.nih.gov/genbank/2019-ncov-seqs/) | |
 | **Luppar News-Rec** | [Luppar News-Rec](http://luppar.com/recommender) | Python e Django |[Z5, Z12News](https://github.com/aasouzaconsult/Luppar-News-Rec/tree/master/data) | Usando *NLP - Natural Language Processing*, *Word2Vec*, *FastText*, SVM - *Support Vector Machine*, *Web Crawler* |
 | **Acessos ao Blog 2019**| [Link](https://app.powerbi.com/view?r=eyJrIjoiMGYwNmY3MWItMzVhZC00MDg0LTgyNDQtNjQ5YjhmMGU5MDI4IiwidCI6IjBjNzE1Yjc3LTNmNjktNDY2NC05NmM0LWI0Yjc2MTI0OTk1YSJ9)| Power BI | Própria | Acompanhamento de visitas à um blog do Wordpress |
 | **Manchas Óleo - Litoral**| [Link](https://app.powerbi.com/view?r=eyJrIjoiYWU1YTY5NGItMmE3Ni00NjAzLTlhNzgtM2EyN2RiMDZlMzYwIiwidCI6IjBjNzE1Yjc3LTNmNjktNDY2NC05NmM0LWI0Yjc2MTI0OTk1YSJ9)| Power BI | [Ibama](http://www.ibama.gov.br/manchasdeoleo-localidades-atingidas) | Acompanhamento das manchas de Óleo no Litoral do Brasil |
