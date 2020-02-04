@@ -24,3 +24,7 @@ Encontrará:
 | **Enem 2014**| [Link](https://public.tableau.com/profile/alex.souza#!/vizhome/RankingEnem2014-GrficodeTendncias/RankingEnem2014)| Tableau | [ENEM](https://enem.inep.gov.br/) | |
 
 ------------
+
+**Alex Souza**
+*Mestre em Inteligência Artificial*
+[Currículo Lattes](http://lattes.cnpq.br/3318149614519892) | [LinkedIn](https://www.linkedin.com/in/alex-souza/) | [Blog Técnico](https://pessoalex.wordpress.com/) 
