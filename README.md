@@ -25,6 +25,4 @@ Encontrará:
 
 ------------
 
-**Alex Souza**
-*Mestre em Inteligência Artificial*
-[Currículo Lattes](http://lattes.cnpq.br/3318149614519892) | [LinkedIn](https://www.linkedin.com/in/alex-souza/) | [Blog Técnico](https://pessoalex.wordpress.com/) 
+**Alex Souza** (*Mestre em Inteligência Artificial*) - [Currículo Lattes](http://lattes.cnpq.br/3318149614519892) | [LinkedIn](https://www.linkedin.com/in/alex-souza/) | [Blog Técnico](https://pessoalex.wordpress.com/) 
