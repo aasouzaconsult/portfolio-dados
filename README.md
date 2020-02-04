@@ -1,9 +1,9 @@
 ![](https://media-exp1.licdn.com/dms/image/C5612AQFEotG8G0z4rA/article-cover_image-shrink_600_2000/0?e=1584576000&v=beta&t=IjIdLtk65ufyVrs0kFAAt9R-o3xVeT3MrgY5Cm2oAtQ)
 
-# Repositório de Projetos em Analises de Dados (buscando valor em dados!!!)
+# Repositório de Projetos em Análises de Dados (buscando valor em dados!!!)
 
 Neste repositório encontrará alguns trabalhos que desenvolvi e estou desenvolvendo, ao longo da minha vida acadêmica e profissional, onde busco através dos dados encontrar informações valiosas para a tomada de decisão.
-Os Projetos iniciaram com análises de dados utilizando Business Intelligence e hoje vem tomando um rumo mais para Inteligência Artificial com a utilização de Machine Learning!
+Os Projetos iniciaram com análises de dados utilizando *Business Intelligence* e hoje vem tomando um rumo mais para Inteligência Artificial com a utilização de *Machine Learning*!
 
 Encontrará:
 - Projetos de BI em Tableau e Power BI
