@@ -15,6 +15,7 @@ Encontrará:
 | ------------ | ------------         | ------------ | ------------    |------------    |
 | **Estudo ENEM - busca de *insights* e padrões** | Em DEV | Python | | |
 | **Previsão de Vendas** | Em DEV | Python | | |
+| **Análise de Crédito - Empréstimo** | [Análise de Crédito](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/Analise%20de%20Cr%C3%A9dito%20-%20Empr%C3%A9stimo/AnaliseCredito_Completo.ipynb) | Python | Loan.csv | Classificação utilizando Floresta Randômica |
 | **Cluster de Escolas** | [Censo 2019](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/Cluster%20de%20Escolas%20-%20Censo%202019/Censo2019.ipynb) | Python | [INEP](http://download.inep.gov.br/microdados/microdados_educacao_basica_2019.zip) | Cluster usando K-Means |
 | **Coronavirus OnLine**| [Link](https://pessoalex.wordpress.com/2020/02/04/monitoramento-online-do-coronavirus-usando-powerbi/)| Power BI | [NCBI](https://www.ncbi.nlm.nih.gov/genbank/2019-ncov-seqs/) | |
 | **Luppar News-Rec** | [Luppar News-Rec](http://luppar.com/recommender) | Python e Django |[Z5, Z12News](https://github.com/aasouzaconsult/Luppar-News-Rec/tree/master/data) | Usando *NLP - Natural Language Processing*, *Word2Vec*, *FastText*, SVM - *Support Vector Machine*, *Web Crawler* |
