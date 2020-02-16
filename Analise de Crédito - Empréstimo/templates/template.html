@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Análise de Crédito - Usando Machine Learning</title>
+  </head>
+  <body>
+
+	<div class="container">
+		<h1>Análise de Crédito de Cliente</h1>
+		Informe os dados abaixo para verificar se o cliente terá ou não acesso ao crédito (emprestimo) solicitado
+		<br><br>
+		<form action="/verificar" method="post">
+		  <fieldset class="form-group">
+			<div class="row">
+			  <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+			  <div class="col-sm-10">
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosSexo" id="gridRadios1" value="1" checked>
+				  <label class="form-check-label" for="gridRadios1">
+					Masculino
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosSexo" id="gridRadios2" value="0">
+				  <label class="form-check-label" for="gridRadios2">
+					Feminino
+				  </label>
+				</div>
+			  </div>
+			</div>
+		  </fieldset>
+		  <div class="form-group row">
+			<label for="dependentes" class="col-sm-2 col-form-label">Número de Dependentes:</label>
+			<div class="col-sm-3">
+			  <input type="number" class="form-control" value="0" name="dependentes" min="0" max="5">
+			</div>
+		  </div>
+		  <fieldset class="form-group">
+			<div class="row">
+			  <legend class="col-form-label col-sm-2 pt-0">Casado (a)</legend>
+			  <div class="col-sm-10">
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosCasado" id="gridRadios1" value="1" checked>
+				  <label class="form-check-label" for="gridRadios1">
+					Sim
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosCasado" id="gridRadios2" value="0">
+				  <label class="form-check-label" for="gridRadios2">
+					Não
+				  </label>
+				</div>
+			  </div>
+			</div>
+		  </fieldset>  
+		  <div class="form-group row">
+			<div class="col-sm-2">Grau de Instrução</div>
+			<div class="col-sm-3">
+			  <select name="educacao" class="form-control">
+					<option value="1">Graduado</option>
+					<option value="0">Não Graduado</option>
+			  </select>
+			</div>
+		  </div>
+		  <fieldset class="form-group">
+			<div class="row">
+			  <legend class="col-form-label col-sm-2 pt-0">Trabalha por conta própria</legend>
+			  <div class="col-sm-10">
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosTrabalhoProprio" id="gridRadios1" value="1">
+				  <label class="form-check-label" for="gridRadios1">
+					Sim
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadiosTrabalhoProprio" id="gridRadios2" value="0" checked>
+				  <label class="form-check-label" for="gridRadios2">
+					Não
+				  </label>
+				</div>
+			  </div>
+			</div>
+		  </fieldset>
+		  <div class="form-group row">
+			<label for="rendimendo" class="col-sm-2 col-form-label">Rendimento</label>
+			<div class="col-sm-3">
+			  <input type="value" class="form-control" id="rendimento"  value="0" name="rendimento">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="valoremprestimo" class="col-sm-2 col-form-label">Valor do Emprestimo</label>
+			<div class="col-sm-3">
+			  <input type="value" class="form-control" name="valoremprestimo" id="valoremprestimo" value="100" required="True">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<div class="col-sm-10">
+			  <button type="submit" class="btn btn-primary">Verificar</button>
+			</div>
+		  </div>
+		  
+		</form>
+
+		<!-- {% if classe %} -->
+			{% if classe == "1" %}
+				<div style="display:table-cell; vertical-align:middle; text-align:center">
+					<img src="static/approved.jpeg" width="300px" height="175px" align="center">
+				</div>
+			{% else %}
+				<div style="display:table-cell; vertical-align:middle; text-align:center">
+					<img src="static/denied.jpg" width="300px" height="175px" align="center">
+				</div>
+			{% endif %}
+		<!-- {% endif %} -->
+	<!-- FIM DO CONTAINER-->
+	</div>
+	
+	
+		<!-- Optional JavaScript -->
+		<!-- onkeyup="formatarMoeda2();" -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+	  function formatarMoeda() {
+	  var elemento = document.getElementById('rendimento');
+	  var valor = elemento.value;
+	  
+	  valor = valor + '';
+	  valor = parseInt(valor.replace(/[\D]+/g,''));
+	  valor = valor + '';
+	  valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+	  if (valor.length > 6) {
+		valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+	  }
+
+	  elemento.value = valor;
+	  }
+	</script>
+	<script>
+	  function formatarMoeda2() {
+	  var elemento = document.getElementById('valoremprestimo');
+	  var valor = elemento.value;
+	  
+	  valor = valor + '';
+	  valor = parseInt(valor.replace(/[\D]+/g,''));
+	  valor = valor + '';
+	  valor = valor.replace(/([0-9]{2})$/g, ".$1");
+
+	  if (valor.length > 6) {
+		valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1.$2");
+	  }
+
+	  elemento.value = valor;
+	  }
+	</script>
+  
+  </body>
+  
+</html>
