@@ -13,7 +13,7 @@ Encontrará:
 
 |    Projetos  | Notebooks ou Link    | Linguagem    | Fonte de Dados  | Observação  | 
 | ------------ | ------------         | ------------ | ------------    |------------    |
-| **Estudo ENEM - busca de *insights* e padrões** | Em DEV | Python | | |
+| **Estudo ENEM - busca de *insights* e padrões** | Em DEV | Python | Enem INEP | Primeiros Insights [Link](https://app.powerbi.com/view?r=eyJrIjoiZDE5NjlkNDctZWU4Yi00ZGY4LWE5NTAtN2ZiZmEzY2I4YTI4IiwidCI6IjBjNzE1Yjc3LTNmNjktNDY2NC05NmM0LWI0Yjc2MTI0OTk1YSJ9) |
 | **Previsão de Vendas** | Em DEV | Python | | |
 | **Classificação de Notícias Curtas usando NLP** | [Notícias Curtas PTB](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/NLP%20-%20Classifica%C3%A7%C3%A3o%20de%20Not%C3%ADcias%20Curtas%20PTB/ClassificacaoNoticiasCurtas_Z6NewsBrasil.ipynb) | Python | z6News | Classificação de Notícias Curtas em Português, utilizando NLP (Natural Language Processing), Classifcadores (SVM, KNN, Randon Forest, Decision Tree), Representações de Doucmentos (BoW, TF-IDF, Word2Vec, FastText e as duas últimas usando E2V-IDF) |
 | **Análise de Crédito - Empréstimo** | [Análise de Crédito](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/Analise%20de%20Cr%C3%A9dito%20-%20Empr%C3%A9stimo/AnaliseCredito_Completo.ipynb) | Python | Loan.csv | Classificação utilizando Floresta Randômica |
