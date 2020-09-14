@@ -1,0 +1,259 @@
+# Após estar no diretório do APP
+# Instale o Streamlit
+# Instale o Plotly e sklearn
+# Execute o App: 
+# - streamlit run app.py
+
+Microsoft Windows [versão 10.0.18363.778]
+(c) 2019 Microsoft Corporation. Todos os direitos reservados.
+
+C:\temp\aula03>pip install streamlit
+Collecting streamlit
+  Downloading https://files.pythonhosted.org/packages/62/8f/328730ea12c7434f0c0e077a95950b0eb115ac0f828da14d14afaf8f48d7/streamlit-0.59.0-py2.py3-none-any.whl (7.1MB)
+     |████████████████████████████████| 7.1MB 3.3MB/s
+Collecting watchdog (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/73/c3/ed6d992006837e011baca89476a4bbffb0a91602432f73bd4473816c76e2/watchdog-0.10.2.tar.gz (95kB)
+     |████████████████████████████████| 102kB 6.8MB/s
+Collecting base58 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/ac/03/52b4d529a1ba2f006be395a1b9ff6e1ab83875b84e1dc67343362edaff05/base58-2.0.0-py3-none-any.whl
+Collecting botocore>=1.13.44 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/3f/1e/b1f84a96084abdcb1d675af1789b6ab38b6c5342165b2ccd46a666b06a49/botocore-1.16.10-py2.py3-none-any.whl (6.2MB)
+     |████████████████████████████████| 6.2MB 3.3MB/s
+Collecting pillow>=6.2.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/24/11/8f92034039cbbc53101f8b3ef0653df7e5c4b3540ddb3d0edd8833f8a3a8/Pillow-7.1.2-cp38-cp38-win32.whl (1.8MB)
+     |████████████████████████████████| 1.8MB 2.2MB/s
+Collecting pydeck>=0.1.dev5 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/b6/e6/3b5b96eaabbc949b44f9f106fe50302b33aff6246336297a7106601f0993/pydeck-0.3.1-py2.py3-none-any.whl (5.3MB)
+     |████████████████████████████████| 5.3MB 1.6MB/s
+Collecting requests (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 1.9MB/s
+Collecting click>=7.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl (82kB)
+     |████████████████████████████████| 92kB 2.0MB/s
+Collecting cachetools>=4.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/b3/59/524ffb454d05001e2be74c14745b485681c6ed5f2e625f71d135704c0909/cachetools-4.1.0-py3-none-any.whl
+Collecting astor (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/c3/88/97eef84f48fa04fbd6750e62dcceafba6c63c81b7ac1420856c8dcc0a3f9/astor-0.8.1-py2.py3-none-any.whl
+Collecting python-dateutil (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+     |████████████████████████████████| 235kB 3.3MB/s
+Collecting tzlocal (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting pandas>=0.21.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/07/12/5a087658337a230f4a77e3d548c847e81aa59b332cdd8ddf5c8d7f11c4a1/pandas-1.0.3-cp38-cp38-win32.whl (7.6MB)
+     |████████████████████████████████| 7.6MB 6.4MB/s
+Collecting altair>=3.2.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/01/55/0bb2226e34f21fa549c3f4557b4f154a5632f61132a969da17c95ca8eab9/altair-4.1.0-py3-none-any.whl (727kB)
+     |████████████████████████████████| 737kB 3.3MB/s
+Collecting blinker (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/1b/51/e2a9f3b757eb802f61dc1f2b09c8c99f6eb01cf06416c0671253536517b6/blinker-1.4.tar.gz (111kB)
+     |████████████████████████████████| 112kB 3.3MB/s
+Collecting numpy (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/52/2c/bf86d762ae65550dc8a7ab8381ba610bb69af6db619b3755f2b73052c6b9/numpy-1.18.4-cp38-cp38-win32.whl (10.8MB)
+     |████████████████████████████████| 10.8MB 3.2MB/s
+Collecting protobuf>=3.6.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/27/9c/ef816295b4b40298fd0a17bf8f0ba6cf3e0c44cb2ce72257168e09996b8b/protobuf-3.11.3-py2.py3-none-any.whl (434kB)
+     |████████████████████████████████| 440kB 2.2MB/s
+Collecting tornado<6.0,>=5.0 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/e6/78/6e7b5af12c12bdf38ca9bfe863fcaf53dc10430a312d0324e76c1e5ca426/tornado-5.1.1.tar.gz (516kB)
+     |████████████████████████████████| 522kB 1.7MB/s
+Collecting validators (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/c4/4a/4f9c892f9a9f08ee5f99c32bbd4297499099c2c5f7eff8c617a57d31a7d8/validators-0.15.0.tar.gz
+Collecting enum-compat (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/55/ae/467bc4509246283bb59746e21a1a2f5a8aecbef56b1fa6eaca78cd438c8b/enum_compat-0.0.3-py3-none-any.whl
+Collecting toml (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/9f/e1/1b40b80f2e1663a6b9f497123c11d7d988c0919abbf3c3f2688e448c5363/toml-0.10.1-py2.py3-none-any.whl
+Collecting packaging (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/62/0a/34641d2bf5c917c96db0ded85ae4da25b6cd922d6b794648d4e7e07c88e5/packaging-20.3-py2.py3-none-any.whl
+Collecting boto3 (from streamlit)
+  Downloading https://files.pythonhosted.org/packages/f1/74/24bdefd30800b4c59a954a25ac1726aa5e15a1453b90c7b8ac7ef8001a16/boto3-1.13.10-py2.py3-none-any.whl (128kB)
+     |████████████████████████████████| 133kB 1.7MB/s
+Collecting pathtools>=0.1.1 (from watchdog->streamlit)
+  Downloading https://files.pythonhosted.org/packages/e7/7f/470d6fcdf23f9f3518f6b0b76be9df16dcc8630ad409947f8be2eb0ed13a/pathtools-0.1.2.tar.gz
+Collecting urllib3<1.26,>=1.20; python_version != "3.4" (from botocore>=1.13.44->streamlit)
+  Downloading https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl (126kB)
+     |████████████████████████████████| 133kB 3.3MB/s
+Collecting docutils<0.16,>=0.10 (from botocore>=1.13.44->streamlit)
+  Downloading https://files.pythonhosted.org/packages/22/cd/a6aa959dca619918ccb55023b4cb151949c64d4d5d55b3f4ffd7eee0c6e8/docutils-0.15.2-py3-none-any.whl (547kB)
+     |████████████████████████████████| 552kB 3.3MB/s
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore>=1.13.44->streamlit)
+  Downloading https://files.pythonhosted.org/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl
+Collecting traitlets>=4.3.2 (from pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/ca/ab/872a23e29cec3cf2594af7e857f18b687ad21039c1f9b922fac5b9b142d5/traitlets-4.3.3-py2.py3-none-any.whl (75kB)
+     |████████████████████████████████| 81kB 880kB/s
+Collecting jinja2>=2.10.1 (from pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl (125kB)
+     |████████████████████████████████| 133kB 2.2MB/s
+Collecting ipykernel>=5.1.2; python_version >= "3.4" (from pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/ed/5d/cf47741fa80826f8edf435d9bcf0e84eef2d6d02953ff85e0563b3ab3f0b/ipykernel-5.2.1-py3-none-any.whl (118kB)
+     |████████████████████████████████| 122kB 2.2MB/s
+Collecting ipywidgets>=7.0.0 (from pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/56/a0/dbcf5881bb2f51e8db678211907f16ea0a182b232c591a6d6f276985ca95/ipywidgets-7.5.1-py2.py3-none-any.whl (121kB)
+     |████████████████████████████████| 122kB 3.2MB/s
+Collecting chardet<4,>=3.0.2 (from requests->streamlit)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+     |████████████████████████████████| 143kB 3.3MB/s
+Collecting idna<3,>=2.5 (from requests->streamlit)
+  Downloading https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 1.3MB/s
+Collecting certifi>=2017.4.17 (from requests->streamlit)
+  Downloading https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl (157kB)
+     |████████████████████████████████| 163kB 1.7MB/s
+Collecting six>=1.5 (from python-dateutil->streamlit)
+  Downloading https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+Collecting pytz (from tzlocal->streamlit)
+  Downloading https://files.pythonhosted.org/packages/4f/a4/879454d49688e2fad93e59d7d4efda580b783c745fd2ec2a3adf87b0808d/pytz-2020.1-py2.py3-none-any.whl (510kB)
+     |████████████████████████████████| 512kB 2.2MB/s
+Collecting jsonschema (from altair>=3.2.0->streamlit)
+  Downloading https://files.pythonhosted.org/packages/c5/8f/51e89ce52a085483359217bc72cdbf6e75ee595d5b1d4b5ade40c7e018b8/jsonschema-3.2.0-py2.py3-none-any.whl (56kB)
+     |████████████████████████████████| 61kB 1.3MB/s
+Collecting entrypoints (from altair>=3.2.0->streamlit)
+  Downloading https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Collecting toolz (from altair>=3.2.0->streamlit)
+  Downloading https://files.pythonhosted.org/packages/22/8e/037b9ba5c6a5739ef0dcde60578c64d49f45f64c5e5e886531bfbc39157f/toolz-0.10.0.tar.gz (49kB)
+     |████████████████████████████████| 51kB 3.2MB/s
+Requirement already satisfied: setuptools in c:\python\lib\site-packages (from protobuf>=3.6.0->streamlit) (41.2.0)
+Collecting decorator>=3.4.0 (from validators->streamlit)
+  Downloading https://files.pythonhosted.org/packages/ed/1b/72a1821152d07cf1d8b6fce298aeb06a7eb90f4d6d41acec9861e7cc6df0/decorator-4.4.2-py2.py3-none-any.whl
+Collecting pyparsing>=2.0.2 (from packaging->streamlit)
+  Downloading https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl (67kB)
+     |████████████████████████████████| 71kB 1.6MB/s
+Collecting s3transfer<0.4.0,>=0.3.0 (from boto3->streamlit)
+  Downloading https://files.pythonhosted.org/packages/69/79/e6afb3d8b0b4e96cefbdc690f741d7dd24547ff1f94240c997a26fa908d3/s3transfer-0.3.3-py2.py3-none-any.whl (69kB)
+     |████████████████████████████████| 71kB 1.5MB/s
+Collecting ipython-genutils (from traitlets>=4.3.2->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from jinja2>=2.10.1->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/93/b8/95b1c38f5b00ed2c0d16cf65f2b07a5ae73eeacf66d2010c0e934737d1d9/MarkupSafe-1.1.1-cp38-cp38-win32.whl
+Collecting ipython>=5.0.0 (from ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/b0/00/afc3968a3cdf5f30c5c9dfb8e6a61e63231d6869a461dc1ff418280c5ea4/ipython-7.14.0-py3-none-any.whl (782kB)
+     |████████████████████████████████| 788kB 3.3MB/s
+Collecting jupyter-client (from ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/34/0b/2ebddf775f558158ca8df23b35445fb15d4b1558a9e4a03bc7e75b13476e/jupyter_client-6.1.3-py3-none-any.whl (106kB)
+     |████████████████████████████████| 112kB 3.3MB/s
+Collecting widgetsnbextension~=3.5.0 (from ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/6c/7b/7ac231c20d2d33c445eaacf8a433f4e22c60677eb9776c7c5262d7ddee2d/widgetsnbextension-3.5.1-py2.py3-none-any.whl (2.2MB)
+     |████████████████████████████████| 2.2MB 1.6MB/s
+Collecting nbformat>=4.2.0 (from ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/d5/3c/251cfe5e3c9545ece107d342909ee3822d8cd9f3f11a591df37baeff2089/nbformat-5.0.6-py3-none-any.whl (170kB)
+     |████████████████████████████████| 174kB 2.2MB/s
+Collecting attrs>=17.4.0 (from jsonschema->altair>=3.2.0->streamlit)
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting pyrsistent>=0.14.0 (from jsonschema->altair>=3.2.0->streamlit)
+  Downloading https://files.pythonhosted.org/packages/9f/0d/cbca4d0bbc5671822a59f270e4ce3f2195f8a899c97d0d5abb81b191efb5/pyrsistent-0.16.0.tar.gz (108kB)
+     |████████████████████████████████| 112kB 2.2MB/s
+Collecting jedi>=0.10 (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/f3/3f/67f027e18c60a800875df1a0894a2436ce9053637fa39725766e937c0a71/jedi-0.17.0-py2.py3-none-any.whl (1.1MB)
+     |████████████████████████████████| 1.1MB 2.2MB/s
+Collecting backcall (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/84/71/c8ca4f5bb1e08401b916c68003acf0a0655df935d74d93bf3f3364b310e0/backcall-0.1.0.tar.gz
+Collecting colorama; sys_platform == "win32" (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/c9/dc/45cdef1b4d119eb96316b3117e6d5708a08029992b2fee2c143c7a0a5cc5/colorama-0.4.3-py2.py3-none-any.whl
+Collecting pickleshare (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl
+Collecting pygments (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/2d/68/106af3ae51daf807e9cdcba6a90e518954eb8b70341cee52995540a53ead/Pygments-2.6.1-py3-none-any.whl (914kB)
+     |████████████████████████████████| 921kB 2.2MB/s
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 (from ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/e4/a7/81b39aa50e9284fe2cb21cc7fb7de7817b224172d42793fd57451d38842b/prompt_toolkit-3.0.5-py3-none-any.whl (351kB)
+     |████████████████████████████████| 358kB 2.2MB/s
+Collecting jupyter-core>=4.6.0 (from jupyter-client->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/63/0d/df2d17cdf389cea83e2efa9a4d32f7d527ba78667e0153a8e676e957b2f7/jupyter_core-4.6.3-py2.py3-none-any.whl (83kB)
+     |████████████████████████████████| 92kB 2.0MB/s
+Collecting pyzmq>=13 (from jupyter-client->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/7a/a6/4a3f4cfd3b5336ea6a5442de911d02a16b8b17993be2df8fee39f150bacf/pyzmq-19.0.1-cp38-cp38-win32.whl (910kB)
+     |████████████████████████████████| 911kB 3.2MB/s
+Collecting notebook>=4.4.1 (from widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/b1/f1/0a67f09ef53a342403ffa66646ee39273e0ac79ffa5de5dbe2f3e28b5bdf/notebook-6.0.3-py3-none-any.whl (9.7MB)
+     |████████████████████████████████| 9.7MB 3.3MB/s
+Collecting parso>=0.7.0 (from jedi>=0.10->ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/b5/61/998cce9e7476de000d031874df26a18f67cb73448164fc44a98f0c55920b/parso-0.7.0-py2.py3-none-any.whl (100kB)
+     |████████████████████████████████| 102kB 1.3MB/s
+Collecting wcwidth (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=5.0.0->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/f6/d5/1ecdac957e3ea12c1b319fcdee8b6917ffaff8b4644d673c4d72d2f20b49/wcwidth-0.1.9-py2.py3-none-any.whl
+Collecting pywin32>=1.0; sys_platform == "win32" (from jupyter-core>=4.6.0->jupyter-client->ipykernel>=5.1.2; python_version >= "3.4"->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/9f/cb/d693f7cdaed51d83bfec5c77a9fa895c1a5a18cf242ba53b06b98ee366dd/pywin32-227-cp38-cp38-win32.whl (8.4MB)
+     |████████████████████████████████| 8.4MB 6.4MB/s
+Collecting terminado>=0.8.1 (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/ff/96/1d9a2c23990aea8f8e0b5c3b6627d03196a73771a17a2d9860bbe9823ab6/terminado-0.8.3-py2.py3-none-any.whl
+Collecting prometheus-client (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/b3/23/41a5a24b502d35a4ad50a5bb7202a5e1d9a0364d0c12f56db3dbf7aca76d/prometheus_client-0.7.1.tar.gz
+Collecting nbconvert (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/79/6c/05a569e9f703d18aacb89b7ad6075b404e8a4afde2c26b73ca77bb644b14/nbconvert-5.6.1-py2.py3-none-any.whl (455kB)
+     |████████████████████████████████| 460kB 3.3MB/s
+Collecting Send2Trash (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/49/46/c3dc27481d1cc57b9385aff41c474ceb7714f7935b1247194adae45db714/Send2Trash-1.5.0-py3-none-any.whl
+Collecting pywinpty>=0.5; os_name == "nt" (from terminado>=0.8.1->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/5d/97/8e43c2152a638cdb83d45644eb125c752abe67249f94bb3e3e29b0709685/pywinpty-0.5.7.tar.gz (49kB)
+     |████████████████████████████████| 51kB 825kB/s
+Collecting mistune<2,>=0.8.1 (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/09/ec/4b43dae793655b7d8a25f76119624350b4d65eb663459eb9603d7f1f0345/mistune-0.8.4-py2.py3-none-any.whl
+Collecting defusedxml (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/06/74/9b387472866358ebc08732de3da6dc48e44b0aacd2ddaa5cb85ab7e986a2/defusedxml-0.6.0-py2.py3-none-any.whl
+Collecting testpath (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/1b/9e/1a170feaa54f22aeb5a5d16c9015e82234275a3c8ab630b552493f9cb8a9/testpath-0.4.4-py2.py3-none-any.whl (163kB)
+     |████████████████████████████████| 174kB 1.6MB/s
+Collecting bleach (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/9a/1e/7d6cb3b27cd2c490558349ca5d5cc05b390b017da1c704cac807ac8bd9fb/bleach-3.1.5-py2.py3-none-any.whl (151kB)
+     |████████████████████████████████| 153kB 2.2MB/s
+Collecting pandocfilters>=1.4.1 (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/4c/ea/236e2584af67bb6df960832731a6e5325fd4441de001767da328c33368ce/pandocfilters-1.4.2.tar.gz
+Collecting webencodings (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit)
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+Installing collected packages: pathtools, watchdog, base58, six, python-dateutil, urllib3, docutils, jmespath, botocore, pillow, ipython-genutils, decorator, traitlets, MarkupSafe, jinja2, tornado, parso, jedi, backcall, colorama, pickleshare, pygments, wcwidth, prompt-toolkit, ipython, pywin32, jupyter-core, pyzmq, jupyter-client, ipykernel, numpy, pywinpty, terminado, prometheus-client, mistune, defusedxml, entrypoints, testpath, pyparsing, packaging, webencodings, bleach, pandocfilters, attrs, pyrsistent, jsonschema, nbformat, nbconvert, Send2Trash, notebook, widgetsnbextension, ipywidgets, pydeck, chardet, idna, certifi, requests, click, cachetools, astor, pytz, tzlocal, pandas, toolz, altair, blinker, protobuf, validators, enum-compat, toml, s3transfer, boto3, streamlit       
+  Running setup.py install for pathtools ... done
+  Running setup.py install for watchdog ... done
+  Running setup.py install for tornado ... done
+  Running setup.py install for backcall ... done
+  Running setup.py install for pywinpty ... done
+  Running setup.py install for prometheus-client ... done
+  Running setup.py install for pandocfilters ... done
+  Running setup.py install for pyrsistent ... done
+  Running setup.py install for toolz ... done
+  Running setup.py install for blinker ... done
+  Running setup.py install for validators ... done
+Successfully installed MarkupSafe-1.1.1 Send2Trash-1.5.0 altair-4.1.0 astor-0.8.1 attrs-19.3.0 backcall-0.1.0 base58-2.0.0 bleach-3.1.5 blinker-1.4 boto3-1.13.10 botocore-1.16.10 cachetools-4.1.0 certifi-2020.4.5.1 chardet-3.0.4 click-7.1.2 colorama-0.4.3 decorator-4.4.2 defusedxml-0.6.0 docutils-0.15.2 entrypoints-0.3 enum-compat-0.0.3 idna-2.9 ipykernel-5.2.1 ipython-7.14.0 ipython-genutils-0.2.0 ipywidgets-7.5.1 jedi-0.17.0 jinja2-2.11.2 jmespath-0.10.0 jsonschema-3.2.0 jupyter-client-6.1.3 jupyter-core-4.6.3 mistune-0.8.4 nbconvert-5.6.1 nbformat-5.0.6 notebook-6.0.3 numpy-1.18.4 packaging-20.3 pandas-1.0.3 pandocfilters-1.4.2 parso-0.7.0 pathtools-0.1.2 pickleshare-0.7.5 pillow-7.1.2 prometheus-client-0.7.1 prompt-toolkit-3.0.5 protobuf-3.11.3 pydeck-0.3.1 pygments-2.6.1 pyparsing-2.4.7 pyrsistent-0.16.0 python-dateutil-2.8.1 pytz-2020.1 pywin32-227 pywinpty-0.5.7 pyzmq-19.0.1 requests-2.23.0 s3transfer-0.3.3 six-1.14.0 streamlit-0.59.0 terminado-0.8.3 testpath-0.4.4 toml-0.10.1 toolz-0.10.0 tornado-5.1.1 traitlets-4.3.3 tzlocal-2.1 urllib3-1.25.9 validators-0.15.0 watchdog-0.10.2 wcwidth-0.1.9 webencodings-0.5.1 widgetsnbextension-3.5.1
+WARNING: You are using pip version 19.2.3, however version 20.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\temp\aula03>pip install plotly
+Collecting plotly
+  Downloading https://files.pythonhosted.org/packages/d7/78/eb6cbe96c8379c54819592bb228c58ed7386fcc60a55eca7db99432fdf14/plotly-4.7.1-py2.py3-none-any.whl (11.5MB)
+     |████████████████████████████████| 11.5MB 6.4MB/s
+Requirement already satisfied: six in c:\python\lib\site-packages (from plotly) (1.14.0)
+Collecting retrying>=1.3.3 (from plotly)
+  Downloading https://files.pythonhosted.org/packages/44/ef/beae4b4ef80902f22e3af073397f079c96969c69b2c7d52a57ea9ae61c9d/retrying-1.079c96969c69b2c7d52a57ea9ae61c9d/retrying-1.3.3.tar.gz
+Installing collected packages: retrying, plotly
+  Running setup.py install for retrying ... done
+Successfully installed plotly-4.7.1 retrying-1.3.3
+WARNING: You are using pip version 19.2.3, however version 20.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\temp\aula03>pip install sklearn
+Collecting sklearn
+  Downloading https://files.pythonhosted.org/packages/1e/7a/dbb3be0ce9bd5c8b7e3d87328e79063f8b263b2b1bfa4774cb1147bfcd3f/sklearn-0.0.tar.gz
+Collecting scikit-learn (from sklearn)
+  Downloading https://files.pythonhosted.org/packages/43/27/ce42b34c6a79e8a0ab6b7e57a255916368d6339cc232df12373fe89c30f5/scikit_learn-0.23.0-cp38-cp38-win32.whl (6.0MB)        
+     |████████████████████████████████| 6.0MB 3.3MB/s
+Collecting scipy>=0.19.1 (from scikit-learn->sklearn)
+  Downloading https://files.pythonhosted.org/packages/db/9e/465a416eb04114e3722b17b0f4fa5235bab8a76961de51db0e5850183fb1/scipy-1.4.1-cp38-cp38-win32.whl (27.9MB)
+     |████████████████████████████████| 27.9MB 3.2MB/s
+Collecting joblib>=0.11 (from scikit-learn->sklearn)
+  Downloading https://files.pythonhosted.org/packages/ec/6f/40d92f607be42dd0d2edf5e47c1ed31160addda005e977867f5c1ea8f835/joblib-0.15.0-py3-none-any.whl (298kB)
+     |████████████████████████████████| 307kB 2.2MB/s
+Requirement already satisfied: numpy>=1.13.3 in c:\python\lib\site-packages (from scikit-learn->sklearn) (1.18.4)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn->sklearn)
+  Downloading https://files.pythonhosted.org/packages/db/09/cab2f398e28e9f183714afde872b2ce23629f5833e467b151f18e1e08908/threadpoolctl-2.0.0-py3-none-any.whl
+Installing collected packages: scipy, joblib, threadpoolctl, scikit-learn, sklearn
+  Running setup.py install for sklearn ... done
+Successfully installed joblib-0.15.0 scikit-learn-0.23.0 scipy-1.4.1 sklearn-0.0 threadpoolctl-2.0.0
+WARNING: You are using pip version 19.2.3, however version 20.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.    
+
+C:\temp\aula03>streamlit run app.py
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.11:8501
