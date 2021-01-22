@@ -1,5 +1,7 @@
 ![](https://media-exp1.licdn.com/dms/image/C5612AQFEotG8G0z4rA/article-cover_image-shrink_600_2000/0?e=1584576000&v=beta&t=IjIdLtk65ufyVrs0kFAAt9R-o3xVeT3MrgY5Cm2oAtQ)
 
+[![author](https://img.shields.io/badge/author-AlexSouza-blue.svg)](https://www.linkedin.com/in/alex-souza/) [![](https://img.shields.io/badge/python-green.svg)](https://www.python.org/downloads/release/python-365/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-red.svg)](http://perso.crans.org/besson/LICENSE.html) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aasouzaconsult/Cientista-de-Dados)
+
 # Repositório de alguns Projetos em Análises de Dados (buscando valor em dados!!!)
 
 Neste repositório encontrará alguns trabalhos que desenvolvi e estou desenvolvendo, ao longo da minha vida acadêmica e profissional, onde busco através dos dados encontrar informações valiosas para a tomada de decisão.
