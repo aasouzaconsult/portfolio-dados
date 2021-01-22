@@ -1,8 +1,8 @@
 [![author](https://img.shields.io/badge/author-AlexSouza-blue.svg)](https://www.linkedin.com/in/alex-souza/) [![](https://img.shields.io/badge/python-green.svg)](https://www.python.org/downloads/release/python-365/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-red.svg)](http://perso.crans.org/besson/LICENSE.html) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aasouzaconsult/Cientista-de-Dados)
 
-![](https://d6vdma9166ldh.cloudfront.net/media/images/4594dcf8-a8c5-4fa7-a6d4-bab2c9081041.jpg)
+![](https://blogdozouza.files.wordpress.com/2021/01/protfolio.png)
 
-# Repositório de alguns Projetos em Análises de Dados (buscando valor em dados!!!)
+# Portfólio de Projetos - Ciência de Dados (buscando valor em dados !!!)
 
 Neste repositório encontrará alguns trabalhos que desenvolvi e estou desenvolvendo, ao longo da minha vida acadêmica e profissional, onde busco através dos dados encontrar informações valiosas para a tomada de decisão.
 Os Projetos iniciaram com análises de dados utilizando *Business Intelligence* e hoje vem tomando um rumo mais para Inteligência Artificial com a utilização de *Machine Learning*!
