@@ -5,7 +5,7 @@
 
 **Fases:**
 - Breve introdução do K-Means (Clusterização)
-- Coleta dos dados (já irei disponibilizar aqui)
+- Coleta dos Dados (site do INEP)
 - Análise dos Dados (Profiling, Seleção de *Features*)
 - Encontrando o número de cluster (técnica do cotovelo (*Elbow Method*))
 - Criação do Modelo de *Machine Learning*
