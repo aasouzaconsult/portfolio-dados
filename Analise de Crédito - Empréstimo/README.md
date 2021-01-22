@@ -1,5 +1,8 @@
 # Projeto: Análise de Crédito
 **Objetivo**: Verificar informações de um cliente e retornar se pode liberar ou não crédito para esse cliente com base em dados histórico de outros clientes. 
+
+**Linguagem**: Python
+
 **Fases:**
 - Definição do Problema
 - Preparação dos Dados (Tratamento de *Missing values*, seleção de *features*, categorização)
