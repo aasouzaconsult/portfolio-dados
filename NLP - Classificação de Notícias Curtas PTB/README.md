@@ -10,5 +10,4 @@
 - Criação dos Modelos (*Pipelines*)
 
 **Mais informações**:
-- sobre o esse projeto no Medium ([link](https://medium.com/blog-do-zouza/classifica%C3%A7%C3%A3o-de-not%C3%ADcias-utilizando-machine-learning-b25ff63ea51f))
-- sobre o Luppar News-Rec ([link](https://blogdozouza.wordpress.com/2019/11/24/luppar-news-rec-recomendador-inteligente-de-noticias/))
+- sobre o esse projeto no Medium ([link](https://medium.com/blog-do-zouza/classifica%C3%A7%C3%A3o-de-not%C3%ADcias-usando-aprendizado-de-m%C3%A1quina-aeeb9b6efe61))
