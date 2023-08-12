@@ -2,8 +2,6 @@
 
 ![](https://blogdozouza.files.wordpress.com/2023/06/portfolio_new.png)
 
-![](https://files.tecnoblog.net/wp-content/uploads/2022/04/google_capa-5.jpg)
-
 # Portfólio de Projetos em Dados (Buscando valor em Dados)
 
 Neste repositório encontrará alguns trabalhos que desenvolvi e estou desenvolvendo, ao longo da minha vida acadêmica e profissional, onde busco através dos dados encontrar informações valiosas para a tomada de decisão.
