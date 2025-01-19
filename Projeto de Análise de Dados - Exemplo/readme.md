@@ -1,4 +1,4 @@
-# Projetos para Analista de Dados (Exemplo)
+# Projeto para Portfólio de Analista de Dados (Exemplo)
 
 ## Projeto: Gerenciamento de Vendas com Data Warehouse e Dashboards
 
