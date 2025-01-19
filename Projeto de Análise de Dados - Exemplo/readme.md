@@ -504,4 +504,4 @@ O sucesso dessa fase é medido pelo impacto das análises no processo decisório
 
 ---
 
-Este portfólio demonstra como um Analista de Dados pode transformar dados brutos em insights valiosos por meio de práticas estruturadas e ferramentas avançadas. Os scripts e códigos aqui apresentados estão disponíveis no [GitHub](https://github.com/seurepositorio).
+Este portfólio demonstra como um Analista de Dados pode transformar dados brutos em insights valiosos por meio de práticas estruturadas e ferramentas avançadas. Os scripts e códigos aqui apresentados estão disponíveis no [GitHub](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo).
