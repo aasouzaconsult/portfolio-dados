@@ -319,7 +319,7 @@ Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas 
 ### Dashboards solicitados pelo cliente
 1. **Receita total por mês:** Análise mensal das receitas, permitindo identificar sazonalidades.
 
-![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-1.png)
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-1.png" width="650"/>
 
 ```python
 import pandas as pd
@@ -365,7 +365,7 @@ plt.show()
 
 2. **Desempenho dos vendedores comparado às metas:** Gráficos que destacam vendedores com melhor performance e os que estão abaixo da meta.
 
-![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-2.png)
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-2.png" width="650"/>
 
 ```python
 # Simulando dados de vendas por vendedor e metas
@@ -400,7 +400,7 @@ plt.show()
 
 3. **Produtos mais vendidos por categoria:** Identificação de produtos e categorias mais lucrativos.
 
-![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-3.png)
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-3.png" width="650"/>
 
 ```python
 # Simulando dados de produtos e categorias
@@ -438,7 +438,7 @@ plt.show()
 
 4. **Mapa de vendas por cidade:** Visualização geográfica que destaca regiões de maior venda.
 
-![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-4.png)
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-4.png" width="650"/>
 
 ```python
 # Simulando dados de vendas por cidade (tabela de cliente)
