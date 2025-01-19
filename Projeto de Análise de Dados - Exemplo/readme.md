@@ -203,6 +203,17 @@ data = pd.DataFrame({
 print("Estatísticas descritivas dos dados:")
 print(data.describe())
 
+#Resultado da Estatísticas descritivas dos dados:
+#       ProdutoID    TotalItem  Quantidade
+#count   5.000000     5.000000    5.000000
+#mean    3.000000  1390.000000    1.400000
+#std     1.581139  1501.832214    0.547723
+#min     1.000000   100.000000    1.000000
+#25%     2.000000   150.000000    1.000000
+#50%     3.000000   800.000000    1.000000
+#75%     4.000000  2400.000000    2.000000
+#max     5.000000  3500.000000    2.000000
+
 # Gráfico de barras para receita por produto
 plt.figure(figsize=(10, 6))
 sns.barplot(x='ProdutoID', y='TotalItem', data=data)
