@@ -9,7 +9,7 @@ Este projeto foi desenvolvido para demonstrar as principais etapas do trabalho d
 ## Fase 1: Criação do Banco de Dados
 
 ### Estrutura do Banco de Dados
-Criamos um banco de dados relacional com as seguintes tabelas:
+Criamos um banco de dados relacional (utilizamos o SGBD: [PostgreSQL](https://www.postgresql.org/)) com as seguintes tabelas:
 - **Cliente:** Contém informações dos clientes.
 - **Vendedor:** Contém informações sobre os vendedores.
 - **Produto:** Detalha os produtos disponíveis.
