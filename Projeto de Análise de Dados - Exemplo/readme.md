@@ -239,6 +239,8 @@ plt.ylabel('Receita Total')
 plt.show()
 ```
 
+![Exemplo - Gráfico de barras para receita por produto](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png)
+
 ### Explicação dos Gráficos
 1. **Gráfico de Barras:** Mostra a receita total gerada por cada produto, facilitando a identificação dos produtos mais lucrativos.
 2. **Gráfico de Dispersão:** Analisa a relação entre a quantidade vendida e a receita total, destacando padrões e produtos com maior impacto financeiro.
