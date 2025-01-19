@@ -222,7 +222,7 @@ plt.xlabel('ID do Produto')
 plt.ylabel('Receita Total')
 plt.show()
 
-# Gráfico de dispersão: Quantidade vs Receita
+# Gráfico de dispersão: Analisa a relação entre a quantidade vendida e a receita total, destacando padrões e produtos com maior impacto financeiro.
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x='Quantidade', y='TotalItem', hue='ProdutoID', data=data)
 plt.title('Relação entre Quantidade e Receita por Produto')
@@ -230,7 +230,7 @@ plt.xlabel('Quantidade Vendida')
 plt.ylabel('Receita Total')
 plt.show()
 
-# Boxplot para analisar distribuição da receita por produto
+# Exibe a dispersão e possíveis outliers na receita por produto, ajudando a entender a variação nas vendas.
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='ProdutoID', y='TotalItem', data=data)
 plt.title('Distribuição da Receita por Produto')
@@ -239,12 +239,9 @@ plt.ylabel('Receita Total')
 plt.show()
 ```
 
-![Exemplo - Gráfico de barras para receita por produto](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png)
+Abaixo, um exemplo - Gráfico de barras para receita por produto
+![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png){ width=50% }
 
-### Explicação dos Gráficos
-1. **Gráfico de Barras:** Mostra a receita total gerada por cada produto, facilitando a identificação dos produtos mais lucrativos.
-2. **Gráfico de Dispersão:** Analisa a relação entre a quantidade vendida e a receita total, destacando padrões e produtos com maior impacto financeiro.
-3. **Boxplot:** Exibe a dispersão e possíveis outliers na receita por produto, ajudando a entender a variação nas vendas.
 
 Essa análise fornece insights iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes.
 
