@@ -240,7 +240,7 @@ plt.show()
 ```
 
 Abaixo, um exemplo - Gráfico de barras para receita por produto
-<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png" alt="Exemplo - Gráfico de barras para receita por produto" width="300"/>
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png" alt="Exemplo - Gráfico de barras para receita por produto" width="800"/>
 
 Essa análise fornece insights iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes.
 
