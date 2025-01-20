@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor de Dados usando Gemini (Alex Souza)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f4f4f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: #495057;
+        }
+        strong {
+            font-weight: bold;
+        }
+        em {
+            font-style: italic;
+        }
+        ul {
+            padding: 0;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .author {
+            font-size: 0.9em;
+            color: #d63384;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dados GPT</h1>
+            <span class="author">por Alex Souza</span>
+        </div>
+        <p>Digite sua dúvida ou comando SQL abaixo e receba uma explicação:</p>
+        <textarea id="userInput" placeholder="Digite aqui..."></textarea>
+        <button onclick="sendQuery()">Enviar</button>
+
+        <!-- Caixa para exibir a resposta mais recente -->
+        <div class="response" id="responseBox" style="display: none;"></div>
+
+        <!-- Histórico das perguntas e respostas -->
+        <div id="history" style="margin-top: 20px;">
+            <h3>Histórico</h3>
+            <ul id="historyList" style="list-style-type: none; padding: 0;">
+                <!-- O histórico será adicionado aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        async function sendQuery() {
+            const userInput = document.getElementById("userInput");
+            const responseBox = document.getElementById("responseBox");
+            const historyList = document.getElementById("historyList");
+
+            const userQuestion = userInput.value;
+            if (!userQuestion) {
+                console.error("Campo de entrada vazio!");
+                return;
+            }
+
+            try {
+                const response = await fetch("/query", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ user_input: userQuestion }),
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    responseBox.innerHTML = `<strong>Erro:</strong> ${data.error}`;
+                } else {
+                    // Processar markdown para HTML
+                    let formattedResponse = data.response
+                        .replace(/```([\s\S]*?)```/g, "<pre><code>$1</code></pre>") // Para blocos de código
+                        .replace(/`([^`]+)`/g, "<code>$1</code>") // Para código inline
+                        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>") // Para negrito
+                        .replace(/\*(.+?)\*/g, "<li>$1</li>"); // Para listas simples
+
+                    // Envolver os itens em uma lista não ordenada (se houver `<li>`)
+                    if (/<li>/.test(formattedResponse)) {
+                        formattedResponse = formattedResponse.replace(/(<li>[\s\S]*?<\/li>)/g, "<ul>$1</ul>");
+                    }
+
+                    // Adicionar quebras de linha para clareza
+                    formattedResponse = formattedResponse.replace(/\n/g, "<br>");
+
+                    // Exibir no responseBox
+                    responseBox.innerHTML = `<strong>Resposta:</strong><br>${formattedResponse}`;
+
+                    // Adicionar ao histórico
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = `
+                        <strong>Pergunta:</strong> ${userQuestion}<br>
+                        <strong>Resposta:</strong><br>${formattedResponse}
+                    `;
+                    historyList.appendChild(listItem);
+                }
+                responseBox.style.display = "block";
+            } catch (err) {
+                console.error("Erro ao enviar a solicitação:", err);
+            }
+
+            userInput.value = ""; // Limpa o campo de entrada
+        }
+    </script>
+</body>
+</html>
