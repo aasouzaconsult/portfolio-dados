@@ -281,19 +281,24 @@ Optamos por um **Star Schema**, que oferece simplicidade e eficiência na consul
 
 ### Script de Criação e População de Tabelas
 ```sql
--- Criação das tabelas
+-- Criação das tabelas Dimensionais
+
+-- Criando a dimensão Cliente
 CREATE TABLE DimCliente AS
 SELECT DISTINCT ClienteID, Nome, Cidade
 FROM Cliente;
 
+-- Criando a dimensão vendedor
 CREATE TABLE DimVendedor AS
 SELECT DISTINCT VendedorID, Nome
 FROM Vendedor;
 
+-- Criando a dimensão Produto
 CREATE TABLE DimProduto AS
 SELECT DISTINCT ProdutoID, Nome, Categoria
 FROM Produto;
 
+-- Criando a dimensão Tempo
 CREATE TABLE DimTempo AS
 SELECT DISTINCT
     ROW_NUMBER() OVER () AS TempoID,
@@ -302,6 +307,7 @@ SELECT DISTINCT
     EXTRACT(MONTH FROM DataVenda) AS Mes
 FROM Venda;
 
+-- Criando a Fato de Vendas
 CREATE TABLE FatoVenda AS
 SELECT
     i.VendaID AS FatoID,
@@ -316,6 +322,10 @@ JOIN Venda v ON i.VendaID = v.VendaID
 JOIN DimTempo t ON v.DataVenda = t.Data;
 ```
 
+Mais informações sobre modelagem dimensional, [confira aqui!](https://medium.com/@aasouzaconsult/aprofundando-em-data-warehouse-65ed2bca9a33) 
+
+
+
 ---
 
 ## Fase 5: Visualização de Dados
@@ -324,14 +334,15 @@ JOIN DimTempo t ON v.DataVenda = t.Data;
 Nesta fase, o objetivo é transformar os dados consolidados no Data Warehouse em insights visuais claros e objetivos. Aqui é onde atendemos diretamente às demandas do cliente, mostrando as análises e métricas de maneira compreensível e interativa. As visualizações permitem identificar tendências, avaliar desempenho e tomar decisões estratégicas com base nos dados processados.
 
 ### Ferramentas Utilizadas
-Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas modernas, como:
+Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas modernas, como por exemplo:
 - **Power BI**
 - **Tableau**
 - **Amazon QuickSight**
 - **Qlik Sense**
 - **Looker**
 - **Python** (com bibliotecas como Matplotlib, Seaborn e Plotly)
-    - *As visualizações fiz em Python aqui, para facilitar a exposição! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
+    - *As visualizações fiz em Python aqui, para facilitar a exposição individual de cada indicados! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
+        - No final, tem uma demonstração como ficaria no Power BI.
     - Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Dashboards solicitados pelo cliente
@@ -488,6 +499,10 @@ for _, cidade in dados_cidades.iterrows():
 mapa.save("mapa_vendas.html")
 mapa
 ```
+
+### Um exemplo usando Power BI
+
+
 
 ---
 
