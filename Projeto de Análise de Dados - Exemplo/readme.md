@@ -505,7 +505,11 @@ mapa
 ```
 
 ### Um exemplo usando Power BI
+Observem que no Power BI, ou qualquer outra ferramenta especifíca de visualização de dados, a disposição e visual fica bem mais atrativa e interativa. Sempre comento que devemos usar as ferramentas certas na hora certa!!! Fiz acima no Python para demonstrar passo a passo, mas no dia a dia a visualização é feita utilizando ferramentas de visualização de dados, como por exemplo, o [Power BI](https://www.microsoft.com/pt-br/power-platform/products/power-bi).
 
+
+- *Sugestão de material: [Storytelling em Análise de Dados](https://medium.com/blog-do-zouza/storytelling-em-an%C3%A1lise-de-dados-f708cca115bb)*
+- *Sugestão de livro: [Storytelling com Dados](https://www.amazon.com.br/Storytelling-com-Dados-Visualiza%C3%A7%C3%A3o-Profissionais/dp/8550804681)*
 
 
 ---
