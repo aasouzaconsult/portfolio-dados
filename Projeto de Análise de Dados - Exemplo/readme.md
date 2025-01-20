@@ -124,6 +124,9 @@ INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, TotalItem) VALUES
 
 ```
 
+### Desenho da Modelagem Relacional
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/screenshot_2.png" alt="Modelagem Relacional - PostgreSQL" width="650"/>
+
 ---
 
 ## Fase 2: Simulação de Entrevista com o Gerente de Vendas
