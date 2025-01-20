@@ -128,6 +128,7 @@ INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, TotalItem) VALUES
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/screenshot_2.png" alt="Modelagem Relacional - PostgreSQL" width="650"/>
 
 Agora que temos a nossa base de dados de estudo, na próxima fase irei simular uma entrevista com um Gerente de Vendas.
+
 ---
 
 ## Fase 2: Simulação de Entrevista com o Gerente de Vendas
@@ -186,7 +187,6 @@ As dimensões abaixo, foram projetadas com base nos KPIs identificados para perm
 Esses `KPIs` e `dimensões` são usados para modelar o **Star Schema** no Data Warehouse e garantir uma análise eficiente.
 
 Agora, o próximo passo é entender os dados... ver padrões nestes dados, vê anomalias, outliers... vamos lá!!!
-
 
 ---
 
@@ -264,7 +264,6 @@ Abaixo, um exemplo - Gráfico de barras para receita por produto para entender s
 
 Essa análise fornece *insights* iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes. Agora que já vimos como esta nossa base de dados, entendemos um poucos os dados, vamos para a criação do nosso *Data Warehouse*.
 
-
 ---
 
 ## Fase 4: Criação do Data Warehouse
@@ -329,7 +328,6 @@ JOIN DimTempo t ON v.DataVenda = t.Data;
 Uma vez nosso `Data Warehouse` pronto, com nossas tabelas `fato` e `dimensões`, está na hora de transformar estes dados em algo visual para que possamos mostrar ao nosso usuário. Lembrando sempre, que devemos criar visualizações que atendam a demanda do cliente!
 
 Mais informações sobre modelagem dimensional, [confira aqui!](https://medium.com/@aasouzaconsult/aprofundando-em-data-warehouse-65ed2bca9a33) 
-
 
 
 ---
