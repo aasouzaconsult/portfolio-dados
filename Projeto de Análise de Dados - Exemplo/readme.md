@@ -199,6 +199,15 @@ Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do 
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import psycopg2 #para conectar com bd
+
+#conectando ao BD - exemplo...
+#conn = psycopg2.connect(
+#    host="localhost",
+#    database="portfolio",
+#    user="postgres",
+#    password="suasenha"
+#)
 
 # Simulação de dados extraídos do banco
 data = pd.DataFrame({
