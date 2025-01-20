@@ -20,6 +20,9 @@ Criamos um banco de dados relacional (utilizamos o SGBD: [PostgreSQL](https://ww
 
 ### Script SQL de Criação e População de Tabelas
 ```sql
+-- Criando o Banco de dados
+CREATE DATABASE portfolio;
+
 -- Tabela Cliente
 CREATE TABLE Cliente (
     ClienteID SERIAL PRIMARY KEY,
@@ -185,6 +188,8 @@ Esses KPIs e dimensões são usados para modelar o **Star Schema** no Data Wareh
 
 ### Contextualização
 Nesta fase, realizamos uma análise exploratória para entender a estrutura, a qualidade e os padrões dos dados disponíveis. Essa etapa é crucial para identificar possíveis problemas, como valores ausentes ou inconsistências, e obter insights preliminares.
+
+Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, mas no dia a dia, sim! Devem vir do BD.*
 
 ### Código em Python
 ```python
