@@ -192,7 +192,7 @@ Esses KPIs e dimensões são usados para modelar o **Star Schema** no Data Wareh
 ### Contextualização
 Nesta fase, realizamos uma análise exploratória para entender a estrutura, a qualidade e os padrões dos dados disponíveis. Essa etapa é crucial para identificar possíveis problemas, como valores ausentes ou inconsistências, e obter insights preliminares.
 
-Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, mas no dia a dia, sim! Devem vir do BD.*
+Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Código em Python
 ```python
@@ -332,6 +332,7 @@ Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas 
 - **Looker**
 - **Python** (com bibliotecas como Matplotlib, Seaborn e Plotly)
     - *As visualizações fiz em Python aqui, para facilitar a exposição! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
+    - Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Dashboards solicitados pelo cliente
 1. **Receita total por mês:** Análise mensal das receitas, permitindo identificar sazonalidades.
