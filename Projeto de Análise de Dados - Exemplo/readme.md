@@ -299,12 +299,12 @@ Nesta etapa, estamos construindo o Data Warehouse (DW) para atender às solicita
 Optamos por um **Star Schema**, que oferece simplicidade e eficiência na consulta de dados analíticos.
 
 #### Tabelas
-- **Fato:** FatoVenda (contém medidas como valor e quantidade).
+- **Fato:** `FatoVenda` (contém medidas como valor e quantidade).
 - **Dimensões:**
-  - DimCliente
-  - DimVendedor
-  - DimProduto
-  - DimTempo
+  - `DimCliente`
+  - `DimVendedor`
+  - `DimProduto`
+  - `DimTempo`
 
 ### Script de Criação e População de Tabelas
 ```sql
@@ -372,14 +372,14 @@ Nesta fase, o objetivo é transformar os dados consolidados no Data Warehouse em
 
 ### Ferramentas Utilizadas
 Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas modernas, como por exemplo:
-- **Power BI**
-- **Tableau**
-- **Amazon QuickSight**
-- **Qlik Sense**
-- **Looker**
-- **Python** (com bibliotecas como Matplotlib, Seaborn e Plotly)
-    - *As visualizações fiz em Python aqui, para facilitar a exposição individual de cada indicados! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
-        - **No final, tem uma [demonstração como ficaria no Power BI](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo#um-exemplo-usando-power-bi).**
+- `Power BI`
+- `Tableau`
+- `Amazon QuickSight`
+- `Qlik Sense`
+- `Looker`
+- `Python` (com bibliotecas como Matplotlib, Seaborn e Plotly)
+    - *As visualizações fiz em `Python` aqui, para facilitar a exposição individual de cada indicados! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
+        - **No final, tem uma [demonstração como ficaria no `Power BI`](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo#um-exemplo-usando-power-bi).**
     - Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Dashboards solicitados pelo cliente
