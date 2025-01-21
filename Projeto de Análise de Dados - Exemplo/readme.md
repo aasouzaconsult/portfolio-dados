@@ -325,6 +325,9 @@ JOIN Venda v ON i.VendaID = v.VendaID
 JOIN DimTempo t ON v.DataVenda = t.Data;
 ```
 
+Desenho da Modelagem Dimensional:
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/dimensional.png" width="650"/>
+
 Uma vez nosso `Data Warehouse` pronto, com nossas tabelas `fato` e `dimensões`, está na hora de transformar estes dados em algo visual para que possamos mostrar ao nosso usuário. Lembrando sempre, que devemos criar visualizações que atendam a demanda do cliente!
 
 Mais informações sobre modelagem dimensional, [confira aqui!](https://medium.com/@aasouzaconsult/aprofundando-em-data-warehouse-65ed2bca9a33) 
