@@ -312,18 +312,24 @@ Optamos por um **Star Schema**, que oferece simplicidade e eficiência na consul
 
 -- Criando a dimensão Cliente
 CREATE TABLE DimCliente AS
-SELECT DISTINCT ClienteID, Nome, Cidade
-FROM Cliente;
+SELECT DISTINCT ClienteID,
+       Nome,
+       Cidade
+  FROM Cliente;
 
 -- Criando a dimensão vendedor
 CREATE TABLE DimVendedor AS
-SELECT DISTINCT VendedorID, Nome, MetaMensal
-FROM Vendedor;
+SELECT DISTINCT VendedorID,
+       Nome,
+       MetaMensal
+  FROM Vendedor;
 
 -- Criando a dimensão Produto
 CREATE TABLE DimProduto AS
-SELECT DISTINCT ProdutoID, Nome, Categoria
-FROM Produto;
+SELECT DISTINCT ProdutoID,
+       Nome,
+       Categoria
+  FROM Produto;
 
 -- Criando a dimensão Tempo
 CREATE TABLE DimTempo AS
@@ -341,12 +347,11 @@ SELECT
     v.ClienteID,
     v.VendedorID,
     i.ProdutoID,
-    t.TempoID,
+    v.DataVenda,
     i.Quantidade,
     i.TotalItem AS ValorTotal
 FROM ItemVenda i
-JOIN Venda v ON i.VendaID = v.VendaID
-JOIN DimTempo t ON v.DataVenda = t.Data;
+JOIN Venda v ON i.VendaID = v.VendaID;
 ```
 
 Desenho da Modelagem Dimensional:
@@ -374,7 +379,7 @@ Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas 
 - **Looker**
 - **Python** (com bibliotecas como Matplotlib, Seaborn e Plotly)
     - *As visualizações fiz em Python aqui, para facilitar a exposição individual de cada indicados! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
-        - No final, tem uma demonstração como ficaria no Power BI.
+        - **No final, tem uma [demonstração como ficaria no Power BI](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo#um-exemplo-usando-power-bi).**
     - Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Dashboards solicitados pelo cliente
