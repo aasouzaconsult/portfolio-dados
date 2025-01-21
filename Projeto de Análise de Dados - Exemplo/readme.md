@@ -379,7 +379,7 @@ Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas 
 - `Looker`
 - `Python` (com bibliotecas como Matplotlib, Seaborn e Plotly)
     - *As visualizações fiz em `Python` aqui, para facilitar a exposição individual de cada indicados! Mas sugiro sempre usar ferramentas de visualização self-service (como Power BI, Tableau e as demais citadas acima)*
-        - **No final, tem uma [demonstração como ficaria no `Power BI`](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo#um-exemplo-usando-power-bi).**
+        - **No final, tem uma [demonstração como ficaria no Power BI](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo#um-exemplo-usando-power-bi).**
     - Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Dashboards solicitados pelo cliente
