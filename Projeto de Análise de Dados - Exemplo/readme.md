@@ -198,10 +198,12 @@ Nesta fase, realizamos uma análise exploratória para entender a estrutura, a q
 Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Código em Python
+
 ```python
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 import psycopg2 #para conectar com bd
 
 #conectando ao BD - exemplo...
@@ -212,11 +214,17 @@ import psycopg2 #para conectar com bd
 #    password="suasenha"
 #)
 
-# Simulação de dados extraídos do banco
+# Simulação de dados para produtos
+np.random.seed(42)  # Para garantir reprodutibilidade
+produtos = [1, 2, 3, 4, 5]  # IDs dos produtos
+quantidades = np.random.randint(1, 5, size=200)  # Quantidade de 1 a 4 unidades
+receitas = np.random.normal(loc=1000, scale=500, size=200).clip(100, 4000)  # Receita truncada
+
+# Criação do DataFrame com mais dados
 data = pd.DataFrame({
-    'ProdutoID': [1, 2, 3, 4, 5],
-    'TotalItem': [3500, 100, 150, 2400, 800],
-    'Quantidade': [1, 2, 1, 2, 1]
+    'ProdutoID': np.random.choice(produtos, 200),  # Produto aleatório
+    'TotalItem': receitas,  # Receita simulada
+    'Quantidade': quantidades  # Quantidade simulada
 })
 
 # Estatísticas descritivas
@@ -224,43 +232,44 @@ print("Estatísticas descritivas dos dados:")
 print(data.describe())
 
 #Resultado da Estatísticas descritivas dos dados:
-#       ProdutoID    TotalItem  Quantidade
-#count   5.000000     5.000000    5.000000
-#mean    3.000000  1390.000000    1.400000
-#std     1.581139  1501.832214    0.547723
-#min     1.000000   100.000000    1.000000
-#25%     2.000000   150.000000    1.000000
-#50%     3.000000   800.000000    1.000000
-#75%     4.000000  2400.000000    2.000000
-#max     5.000000  3500.000000    2.000000
+#        ProdutoID    TotalItem  Quantidade
+#count  200.000000   200.000000  200.000000
+#mean     3.095000  1014.048325    2.580000
+#std      1.451381   491.356597    1.117967
+#min      1.000000   100.000000    1.000000
+#25%      2.000000   640.465280    2.000000
+#50%      3.000000  1033.210748    3.000000
+#75%      4.000000  1313.865133    4.000000
+#max      5.000000  2926.365745    4.000000
 
 # Gráfico de barras para receita por produto
 plt.figure(figsize=(10, 6))
-sns.barplot(x='ProdutoID', y='TotalItem', data=data)
+sns.barplot(x='ProdutoID', y='TotalItem', data=data, ci=None, palette='muted')
 plt.title('Receita por Produto')
 plt.xlabel('ID do Produto')
 plt.ylabel('Receita Total')
 plt.show()
 
-# Gráfico de dispersão: Analisa a relação entre a quantidade vendida e a receita total, destacando padrões e produtos com maior impacto financeiro.
+# Gráfico de dispersão: Relação entre a quantidade vendida e a receita total
 plt.figure(figsize=(10, 6))
-sns.scatterplot(x='Quantidade', y='TotalItem', hue='ProdutoID', data=data)
+sns.scatterplot(x='Quantidade', y='TotalItem', hue='ProdutoID', data=data, palette='deep', s=100)
 plt.title('Relação entre Quantidade e Receita por Produto')
 plt.xlabel('Quantidade Vendida')
 plt.ylabel('Receita Total')
+plt.legend(title='ProdutoID')
 plt.show()
 
-# Exibe a dispersão e possíveis outliers na receita por produto, ajudando a entender a variação nas vendas.
+# Gráfico de boxplot para visualizar possíveis outliers
 plt.figure(figsize=(10, 6))
-sns.boxplot(x='ProdutoID', y='TotalItem', data=data)
-plt.title('Distribuição da Receita por Produto')
+sns.boxplot(x='ProdutoID', y='TotalItem', data=data, palette='Set2')
+plt.title('Distribuição da Receita por Produto (com mais dados)')
 plt.xlabel('ID do Produto')
 plt.ylabel('Receita Total')
 plt.show()
 ```
 
-Abaixo, um exemplo - Gráfico de barras para receita por produto para entender se tem alguma anomalia de valores
-<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output.png" alt="Exemplo - Gráfico de barras para receita por produto" width="650"/>
+Abaixo, um exemplo de um Boxplot, em busca de encontrar outliers
+<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/boxplor.png" alt="Exemplo - BoxPlot" width="650"/>
 
 Essa análise fornece *insights* iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes. Agora que já vimos como esta nossa base de dados, entendemos um poucos os dados, vamos para a criação do nosso *Data Warehouse*.
 
