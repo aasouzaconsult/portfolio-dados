@@ -535,7 +535,7 @@ mapa
 ### Um exemplo usando Power BI
 Observem que no Power BI, ou qualquer outra ferramenta especifíca de visualização de dados, a disposição e visual fica bem mais atrativa e interativa. Sempre comento que devemos usar as ferramentas certas na hora certa!!! Fiz acima no Python para demonstrar passo a passo, mas no dia a dia a visualização é feita utilizando ferramentas de visualização de dados, como por exemplo, o [Power BI](https://www.microsoft.com/pt-br/power-platform/products/power-bi).
 
-Exemplo de um visual simples no Power BI (Download do PBIX):
+Exemplo de um visual simples no Power BI ([Download do PBIX](https://github.com/aasouzaconsult/portfolio-dados/blob/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo/portfolio.pbix)):
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/pbi_vendas.png" width="650"/>
 
