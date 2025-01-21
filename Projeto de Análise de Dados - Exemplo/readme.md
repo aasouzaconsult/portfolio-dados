@@ -188,7 +188,7 @@ As dimensões abaixo, foram projetadas com base nos KPIs identificados para perm
    - **Justificativa:** Permite a análise das vendas segmentadas por cliente e localização.
 
 2. **DimVendedor:**
-   - **Campos:** `VendedorID`, `Nome`.
+   - **Campos:** `VendedorID`, `Nome`, `MetaMensal`.
    - **Justificativa:** Necessária para acompanhar o desempenho dos vendedores.
 
 3. **DimProduto:**
@@ -317,7 +317,7 @@ FROM Cliente;
 
 -- Criando a dimensão vendedor
 CREATE TABLE DimVendedor AS
-SELECT DISTINCT VendedorID, Nome
+SELECT DISTINCT VendedorID, Nome, MetaMensal
 FROM Vendedor;
 
 -- Criando a dimensão Produto
