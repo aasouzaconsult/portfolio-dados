@@ -268,7 +268,7 @@ plt.ylabel('Receita Total')
 plt.show()
 ```
 
-Abaixo, um exemplo de um Boxplot, em busca de encontrar outliers
+**Abaixo, um exemplo de um Boxplot, em busca de encontrar *outliers***
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/boxplor.png" alt="Exemplo - BoxPlot" width="650"/>
 
 Essa análise fornece *insights* iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes. Agora que já vimos como esta nossa base de dados, entendemos um poucos os dados, vamos para a criação do nosso *Data Warehouse*.
