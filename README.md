@@ -1,5 +1,4 @@
-[![author](https://img.shields.io/badge/Author-AlexSouza-blue.svg)](https://linktr.ee/zouza) [![Language](https://img.shields.io/badge/Language-Python|R-green.svg)](https://www.python.org/downloads/release/python-365/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-red.svg)](http://perso.crans.org/besson/LICENSE.html) [![contributions welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat)](https://github.com/aasouzaconsult/Cientista-de-Dados)
-[![Focus](https://img.shields.io/badge/Foco-IA%20%7C%20IA%20Generativa-purple.svg)]()
+[![author](https://img.shields.io/badge/Author-AlexSouza-blue.svg)](https://linktr.ee/zouza) [![Language](https://img.shields.io/badge/Language-Python|R-green.svg)](https://www.python.org/downloads/release/python-365/) [![Focus](https://img.shields.io/badge/Foco-IA%20%7C%20IA%20Generativa-purple.svg)]() [![contributions welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat)](https://github.com/aasouzaconsult/Cientista-de-Dados)  [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-red.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 ---
 
