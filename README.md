@@ -4,7 +4,7 @@
 
 ![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/08/alexsouza.png)
 
-# 📊 Portfólio de Projetos em Dados  
+# 📊 Portfólio de Projetos em Dados, Machine Learning e IA Generativa
 *(Buscando valor em Dados de ponta a ponta)*
 
 Bem-vindo ao meu portfólio!  
