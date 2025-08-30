@@ -5,7 +5,7 @@
 
 **Fases:**
 - Definição do Problema
-- *Web Scraping* ([link](https://colab.research.google.com/drive/1IEKPpZ7p1S2ncCk4uAg8nEbl3Pd2J-Py#scrollTo=wFiEg7SWwRMI&forceEdit=true&sandboxMode=true))
+- *Web Scraping* ([link](https://github.com/aasouzaconsult/portfolio-dados/blob/master/NLP%20-%20Classifica%C3%A7%C3%A3o%20de%20Not%C3%ADcias%20Curtas%20PTB/Live_WebScraping_Exemplo.ipynb))
 - Preparação dos Dados e *Embeddings* (*Word2Vec* | *FastText*)
 - Criação dos Modelos (*Pipelines*)
 
