@@ -50,8 +50,9 @@ Aqui compartilho parte da minha jornada como **Cientista de Dados** e **Professo
 
 ## 👤 Sobre mim  
 **Alex Souza**
+
 “Se você busca alguém para transformar dados em valor estratégico, conectar IA Generativa com negócios reais, e ensinar times a usar dados de forma prática, entre em contato comigo.”
 
-[Instagram](https://www.instagram.com/alexsouzamsc/) | [Youtube](https://www.youtube.com/@alexsouzamsc) | [LinkedIn](https://www.linkedin.com/in/alex-souza/) | [Blog Técnico](https://medium.com/blog-do-zouza) | [Kaggle](https://www.kaggle.com/aasouzaconsult/notebooks) | [Currículo Lattes](http://lattes.cnpq.br/3318149614519892)
+[Instagram](https://www.instagram.com/alexsouzamsc/) | [Youtube](https://www.youtube.com/@alexsouzamsc) | [LinkedIn](https://www.linkedin.com/in/alex-souza/) | [Blog Técnico](https://medium.com/blog-do-zouza) | [Kaggle](https://www.kaggle.com/aasouzaconsult/notebooks) | [Currículo Lattes](http://lattes.cnpq.br/3318149614519892) | [X](https://x.com/alexsouza_sql) | [Sites Prof. Alex Souza](https://linktr.ee/sites_alexsouza)
 
 ---
