@@ -49,8 +49,8 @@ Aqui compartilho parte da minha jornada como **Cientista de Dados** e **Professo
 ---
 
 ## 👤 Sobre mim  
-
-**Alex Souza** (*Mestre em Inteligência Artificial | MTAC*)  
+**Alex Souza**
+“Se você busca alguém para transformar dados em valor estratégico, conectar IA Generativa com negócios reais, e ensinar times a usar dados de forma prática, entre em contato comigo.”
 
 - [Currículo Lattes](http://lattes.cnpq.br/3318149614519892)  
 - [LinkedIn](https://www.linkedin.com/in/alex-souza/)  
