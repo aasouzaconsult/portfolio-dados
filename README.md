@@ -2,7 +2,7 @@
 
 ---
 
-![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/08/1745875056114.jpg)
+![](https://blogdozouza.wordpress.com/wp-content/uploads/2025/08/alexsouza.png)
 
 # 📊 Portfólio de Projetos em Dados  
 *(Buscando valor em Dados de ponta a ponta)*
