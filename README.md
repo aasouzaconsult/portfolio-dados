@@ -5,7 +5,7 @@
 # Portfólio de Projetos em Dados (Buscando valor em Dados)
 
 Neste repositório encontrará alguns trabalhos que desenvolvi e estou desenvolvendo, ao longo da minha vida acadêmica e profissional, onde busco através dos dados encontrar informações valiosas para a tomada de decisão.
-Os Projetos iniciaram com análises de dados utilizando *Business Intelligence* e hoje vem tomando um rumo mais para Inteligência Artificial com a utilização de *Machine Learning*!
+Os Projetos iniciaram com análises de dados utilizando *Business Intelligence* e hoje vem tomando um rumo mais para Inteligência Artificial com a utilização de *Machine Learning* e IA Generativa!
 
 *Observação: Os dados são de fontes públicas e o objetivo dos trabalhos são testar e colocar em prática o uso de algoritmos, ferramentas e técnicas.*
 
@@ -17,6 +17,7 @@ Aqui encontrará:
 
 |    Nome do Projeto  | Notebook ou Link    | Linguagem    | Fonte de Dados  | Observação  | 
 | ------------        | ------------        | ------------ | ------------    |------------ |
+| **Integração Python com Gemini** | [Passo a Passo](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Integra%C3%A7%C3%A3o%20Flask%20Python%20%2B%20Gemini) | Python | - | Este projeto demonstra a integração do *framework Flask* com a *API do Gemini* para criar uma aplicação web interativa. A aplicação permite que o usuário faça perguntas, que serão processadas e respondidas pela API do Gemini. Além disso, o histórico completo da conversa é exibido na interface, tornando o processo transparente e fácil de acompanhar.|
 | **Prevendo Valores de Imóveis** | [Previsão de Valores de Imóveis](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/Previs%C3%A3o%20Valores%20de%20Im%C3%B3veis/PrevisaoValores_Regressao.ipynb) | Python | data.csv | **Um projeto completo de Machine Learning**, da definição do problema, passando pela Análise Exploratória dos Dados (EDA - *Exploratory Data Analysis*), tratamento, geração do modelo (Regressão utilizando ***Regressão Linear, Decision Tree, Random Forest***) até o Deploy em Produção, utilizando **streamlit**|
 | **Covid-19 (Einstein Data4u)** | [Proposta](https://www.kaggle.com/aasouzaconsult/prevendo-covid-19-no-brasil) | Python | [Kaggle](https://www.kaggle.com/einsteindata4u/covid19) | Proposta de solução para o desafio do Hospital Israelita Albert Einstein - **Etapas**: Análise Exploratória de Dados, Balançeamento de Classes, aplicação de diversos **algoritmos de Classificação** e exposição dos resultados |
 | **Análise de Crédito - Empréstimo** | [Análise de Crédito](https://github.com/aasouzaconsult/Cientista-de-Dados/blob/master/Analise%20de%20Cr%C3%A9dito%20-%20Empr%C3%A9stimo/An%C3%A1lise%20de%20Cr%C3%A9dito.ipynb) | Python | Loan.csv | **Um projeto completo de Machine Learning**, da definição do problema, passando pela Análise Exploratória dos Dados (EDA - *Exploratory Data Analysis*), tratamento, geração do modelo (classificação utilizando ***Random Forest***) até a Publicação na Web - utilizando flask (o Deploy em Produção)|
