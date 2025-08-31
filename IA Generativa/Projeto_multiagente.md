@@ -1,7 +1,7 @@
 # 🚗 Projeto Multi-Agente com MCP – Zouza Motors
 
 ## Introdução do Problema  
-O desafio  foi criar um sistema de atendimento inteligente para uma concessionária fictícia, a **Zouza Motors**, que pudesse automatizar interações típicas de clientes em três áreas fundamentais:  
+O desafio  foi criar um sistema de atendimento inteligente para uma concessionária fictícia, a [**Zouza Motors**](https://zouza-motors.netlify.app/), que pudesse automatizar interações típicas de clientes em três áreas fundamentais:  
 1. **Recepção** – o primeiro contato, apresentando a empresa e direcionando o atendimento.  
 2. **Vendas** – suporte ao processo de compra de veículos e agendamento de visitas/test drives.  
 3. **Manutenção** – agendamento de revisões e suporte pós-venda.  
@@ -313,7 +313,7 @@ async def resolve_chat():
 ## Passo a Passo do uso (em imagens)
 
 > **Fluxo de Vendas**
-1. Abertura do app e mensagem de boas‑vindas.  
+1. Abertura do app e mensagem de boas‑vindas. [zouza-motors](https://zouza-motors.netlify.app/)
    ![Tela inicial](imagens/img0.jpeg)
 
 2. Consulta ao catálogo (ex.: “Superesportivo”).  
