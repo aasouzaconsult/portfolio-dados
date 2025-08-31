@@ -1,7 +1,7 @@
 # 🚗 Projeto Multi-Agente com MCP – Zouza Motors
 
 ## Introdução do Problema  
-O desafio proposto foi criar um sistema de atendimento inteligente para uma concessionária fictícia, a **Zouza Motors**, que pudesse automatizar interações típicas de clientes em três áreas fundamentais:  
+O desafio  foi criar um sistema de atendimento inteligente para uma concessionária fictícia, a **Zouza Motors**, que pudesse automatizar interações típicas de clientes em três áreas fundamentais:  
 1. **Recepção** – o primeiro contato, apresentando a empresa e direcionando o atendimento.  
 2. **Vendas** – suporte ao processo de compra de veículos e agendamento de visitas/test drives.  
 3. **Manutenção** – agendamento de revisões e suporte pós-venda.  
