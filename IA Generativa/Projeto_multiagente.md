@@ -47,22 +47,16 @@ Conectando ao Banco de dados:
 # Configuração do Servidor MCP e Conexão com PostgreSQL
 # ===============================================================
 #
-# Este trecho inicializa um servidor MCP (Model Context Protocol)
-# chamado "FerramentasAssistenteNovaDriveMotors", que expõe as
-# ferramentas (tools) que os agentes vão utilizar durante o
-# atendimento. O MCP permite que os agentes chamem funções Python
+# Este trecho inicializa um servidor MCP (Model Context Protocol) chamado "FerramentasAssistenteNovaDriveMotors", que expõe as
+# ferramentas (tools) que os agentes vão utilizar durante o atendimento. O MCP permite que os agentes chamem funções Python
 # como se fossem "APIs internas".
 #
-# A conexão é feita com um banco de dados PostgreSQL online,
-# onde ficam armazenadas as informações sobre veículos, clientes,
-# concessionárias e vendedores. Os dados em tempo real consultados
-# por esse banco permitem que os agentes forneçam respostas atualizadas
+# A conexão é feita com um banco de dados PostgreSQL online, onde ficam armazenadas as informações sobre veículos, clientes,
+# concessionárias e vendedores. Os dados em tempo real consultados por esse banco permitem que os agentes forneçam respostas atualizadas
 # e coerentes durante a conversa.
 #
-# A string de conexão (CONN_STR) é parametrizada com host, porta,
-# nome do banco, usuário e senha. A função get_connection() encapsula
-# a criação da conexão, garantindo que as ferramentas MCP que precisam
-# acessar o banco reutilizem sempre a mesma lógica.
+# A string de conexão (CONN_STR) é parametrizada com host, porta, nome do banco, usuário e senha. A função get_connection() encapsula
+# a criação da conexão, garantindo que as ferramentas MCP que precisam acessar o banco reutilizem sempre a mesma lógica.
 #
 # Dependência: psycopg2 (driver Python para PostgreSQL).
 # ===============================================================
