@@ -1,3 +1,3 @@
-# 🚗 Projeto RAG com LangChain
+# 📎Projeto RAG com LangChain
 
 *Em contrução*
