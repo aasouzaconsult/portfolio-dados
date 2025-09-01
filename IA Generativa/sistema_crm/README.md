@@ -330,11 +330,11 @@ Até amanhã para mais conquistas! 🚀
 - **Adicionar Lead**: Formulário responsivo com todos os campos necessários
     ![Tela inicial](imagens/AdicionarLead.jpeg)
 - **Editar Lead**: Pré-populado com dados existentes
-    ![Tela inicial](imagens/Editar.jpeg)
+    ![Tela inicial](imagens/editar.jpeg)
 - **Visualizar Lead**: Exibição completa e organizada das informações
-    ![Tela inicial](imagens/Consultar.jpeg)
+    ![Tela inicial](imagens/consultar.jpeg)
 - **Excluir Lead**: Exclusão com confirmação
-    ![Tela inicial](imagens/Deletar.jpeg)
+    ![Tela inicial](imagens/deletar.jpeg)
 
 ### Relatórios
 - **Tempo no Status**: Tabela dinâmica mostrando há quantos dias cada lead está no status atual
