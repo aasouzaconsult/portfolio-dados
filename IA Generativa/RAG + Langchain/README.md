@@ -166,17 +166,6 @@ def model_ollama(model="phi3:mini-4k", temperature=0.1):
         temperature=temperature,
     )
     return llm
-
-def model_hf_hub(model="microsoft/Phi-3-mini-4k-instruct", temperature=0.1):
-    """Configuração para HuggingFace Hub"""
-    llm = HuggingFaceEndpoint(
-        repo_id=model,
-        temperature=temperature,
-        return_full_text=False,
-        max_new_tokens=1024,
-        task="text-generation"
-    )
-    return llm
 ```
 
 **Flexibilidade Multi-Provider:**
@@ -269,6 +258,14 @@ if "docs_list" not in st.session_state:
 if "retriever" not in st.session_state:
     st.session_state.retriever = None
 ```
+
+**Visual da tela**
+- Obsevem os detalhes na tela
+    - Seleção de arquivos a Esquerda na parte superior
+    - Multiplos arquivos
+    - Resposta com referência de onde achou e o trecho
+    ![Escolha de categoria](imagens/RAG.jpeg)
+
 
 ### 8. Pipeline de Processamento Completo
 
@@ -402,107 +399,6 @@ Contexto: {context}"""
    📄 Fonte 2: regulamentacoes.pdf - p. 41
    ```
 
-
-## 🔧 Configuração e Instalação
-
-### Dependências
-
-```bash
-pip install streamlit langchain langchain-community langchain-openai
-pip install langchain-huggingface langchain-ollama langchain-groq
-pip install faiss-cpu PyPDF2 python-dotenv torch
-pip install sentence-transformers transformers
-```
-
-### Variáveis de Ambiente
-
-```env
-# .env file
-OPENAI_API_KEY=sk-...
-GROQ_API_KEY=gsk_...
-HUGGINGFACEHUB_API_TOKEN=hf_...
-```
-
-### Execução
-
-```bash
-streamlit run RAG-PDF.py
-```
-
-## 📈 Casos de Uso Específicos
-
-### 1. Análise de Contratos Legais
-- **Input**: PDFs de contratos complexos
-- **Query**: "Quais são as cláusulas de rescisão?"
-- **Output**: Resposta precisa com citação de páginas específicas
-
-### 2. Pesquisa Acadêmica
-- **Input**: Papers científicos em PDF
-- **Query**: "Como os autores mediram a eficácia do tratamento?"
-- **Output**: Metodologia extraída com referências exatas
-
-### 3. Documentação Técnica
-- **Input**: Manuais de software
-- **Query**: "Como configurar autenticação SSL?"
-- **Output**: Passo-a-passo com referências às seções relevantes
-
-
-## 🔮 Melhorias Futuras
-
-### 1. Processamento Avançado
-- **OCR Integration**: Suporte a PDFs escaneados
-- **Multimodal**: Análise de imagens e gráficos em PDFs
-- **Structured Extraction**: Tabelas e formulários
-
-### 2. Retrieval Sofisticado
-- **Hybrid Search**: Combina busca semântica + keyword
-- **Re-ranking**: Modelos especializados para reordenação
-- **Query Expansion**: Expansão automática de queries
-
-### 3. Escalabilidade
-- **Vector Database**: Migração para Pinecone/Weaviate
-- **Distributed Processing**: Processamento paralelo de documentos
-- **API REST**: Exposição via FastAPI
-
-### 4. Analytics
-- **Query Analytics**: Tracking de perguntas frequentes
-- **Document Insights**: Seções mais consultadas
-- **User Behavior**: Padrões de uso e otimizações
-
-## 📞 Configuração de Desenvolvimento
-
-### Estrutura de Projeto
-
-```
-rag-pipeline/
-├── RAG-PDF.py                 # Aplicação principal
-├── vectorstore/               # Índices FAISS persistidos
-│   └── db_faiss/
-│── .env                       # Variáveis de ambiente
-└── requirements.txt           # Dependências
-```
-
-## 🎯 Resultados Alcançados
-
-### Benefícios Quantitativos
-- **Redução de 85% no tempo de busca**: De 30 minutos para 3-5 minutos por consulta
-- **Precisão de 95%**: Respostas fiéis ao conteúdo original
-- **Cobertura total**: Indexação de 100% do conteúdo textual dos PDFs
-- **Escalabilidade**: Suporte a múltiplos documentos simultaneamente
-
-### Benefícios Qualitativos
-- **Busca semântica**: Encontra informações mesmo com termos diferentes
-- **Contexto preservado**: Respostas mantêm nuances do documento original
-- **Rastreabilidade**: Cada resposta aponta para fonte específica
-- **Experiência conversacional**: Interface natural de chat
-- **Multi-provider**: Flexibilidade de escolha de LLM baseada em necessidade
-
-### Casos de Uso Validados
-- **Pesquisa jurídica**: Análise de contratos e regulamentações
-- **Revisão acadêmica**: Consulta a papers e documentos científicos
-- **Documentação técnica**: Busca em manuais e especificações
-- **Compliance**: Verificação de políticas e procedimentos
-
 ## 📚 Exemplo Prático de Uso
 
 ### Cenário: Análise de Manual Técnico
@@ -536,6 +432,106 @@ Quando o token expira, a API retorna erro 401. Você deve:
 📄 Fonte 0: manual_api.pdf - p. 68
 📄 Fonte 1: manual_api.pdf - p. 102
 ```
+
+## 🎯 Resultados Alcançados
+
+### Benefícios Quantitativos
+- **Redução de 85% no tempo de busca**: De 30 minutos para 3-5 minutos por consulta
+- **Precisão de 95%**: Respostas fiéis ao conteúdo original
+- **Cobertura total**: Indexação de 100% do conteúdo textual dos PDFs
+- **Escalabilidade**: Suporte a múltiplos documentos simultaneamente
+
+### Benefícios Qualitativos
+- **Busca semântica**: Encontra informações mesmo com termos diferentes
+- **Contexto preservado**: Respostas mantêm nuances do documento original
+- **Rastreabilidade**: Cada resposta aponta para fonte específica
+- **Experiência conversacional**: Interface natural de chat
+- **Multi-provider**: Flexibilidade de escolha de LLM baseada em necessidade
+
+### Casos de Uso Validados
+- **Pesquisa jurídica**: Análise de contratos e regulamentações
+- **Revisão acadêmica**: Consulta a papers e documentos científicos
+- **Documentação técnica**: Busca em manuais e especificações
+- **Compliance**: Verificação de políticas e procedimentos
+
+## 📞 Configuração de Desenvolvimento
+
+### Estrutura de Projeto
+
+```
+rag-pipeline/
+├── RAG-PDF.py                 # Aplicação principal
+├── vectorstore/               # Índices FAISS persistidos
+│   └── db_faiss/
+│── .env                       # Variáveis de ambiente
+└── requirements.txt           # Dependências
+```
+
+## 🔧 Configuração e Instalação
+
+### Dependências
+
+```bash
+pip install streamlit langchain langchain-community langchain-openai
+pip install langchain-huggingface langchain-ollama langchain-groq
+pip install faiss-cpu PyPDF2 python-dotenv torch
+pip install sentence-transformers transformers
+```
+
+### Variáveis de Ambiente
+
+```env
+# .env file
+OPENAI_API_KEY=sk-...
+GROQ_API_KEY=gsk_...
+HUGGINGFACEHUB_API_TOKEN=hf_...
+```
+
+### Execução
+
+```bash
+streamlit run RAG-PDF.py
+```
+
+## 🔮 Melhorias Futuras
+
+### 1. Processamento Avançado
+- **OCR Integration**: Suporte a PDFs escaneados
+- **Multimodal**: Análise de imagens e gráficos em PDFs
+- **Structured Extraction**: Tabelas e formulários
+
+### 2. Retrieval Sofisticado
+- **Hybrid Search**: Combina busca semântica + keyword
+- **Re-ranking**: Modelos especializados para reordenação
+- **Query Expansion**: Expansão automática de queries
+
+### 3. Escalabilidade
+- **Vector Database**: Migração para Pinecone/Weaviate
+- **Distributed Processing**: Processamento paralelo de documentos
+- **API REST**: Exposição via FastAPI
+
+### 4. Analytics
+- **Query Analytics**: Tracking de perguntas frequentes
+- **Document Insights**: Seções mais consultadas
+- **User Behavior**: Padrões de uso e otimizações
+
+
+## 📈 Casos de Uso Específicos
+
+### 1. Análise de Contratos Legais
+- **Input**: PDFs de contratos complexos
+- **Query**: "Quais são as cláusulas de rescisão?"
+- **Output**: Resposta precisa com citação de páginas específicas
+
+### 2. Pesquisa Acadêmica
+- **Input**: Papers científicos em PDF
+- **Query**: "Como os autores mediram a eficácia do tratamento?"
+- **Output**: Metodologia extraída com referências exatas
+
+### 3. Documentação Técnica
+- **Input**: Manuais de software
+- **Query**: "Como configurar autenticação SSL?"
+- **Output**: Passo-a-passo com referências às seções relevantes
 
 ## 🎯 Casos de Uso Especializados (Exemplos)
 
