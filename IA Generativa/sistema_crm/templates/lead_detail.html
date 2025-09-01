@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Lead</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Detalhes do Lead</h1>
+
+        <div class="card">
+            <div class="card-header bg-info text-white">Informações do Lead</div>
+            <div class="card-body">
+                <p><strong>Nome:</strong> {{ lead.nome }}</p>
+                <p><strong>Email:</strong> {{ lead.email }}</p>
+                <p><strong>Telefone:</strong> {{ lead.telefone }}</p>
+                <p><strong>Escola:</strong> {{ lead.escola }}</p>
+                <p><strong>Cidade:</strong> {{ lead.cidade }}</p>
+                <p><strong>Estado:</strong> {{ lead.estado }}</p>
+                <p><strong>Séries Trabalhadas:</strong> {{ lead.series_trabalhadas }}</p>
+                <p><strong>Nome do Diretor:</strong> {{ lead.nome_diretor }}</p>
+                <p><strong>Nome do Mantenedor:</strong> {{ lead.nome_mantenedor }}</p>
+                <p><strong>Nome do Responsável Financeiro:</strong> {{ lead.nome_responsavel_financeiro }}</p>
+                <p><strong>Necessidade:</strong> {{ lead.necessidade }}</p>
+                <p><strong>Orçamento Estimado:</strong> {{ lead.orçamento_estimado }}</p>
+                <p><strong>Consultor:</strong> {{ lead.consultor or 'Não atribuído' }}</p>
+
+                <div class="text-end">
+                    <a href="{{ url_for('edit_lead', lead_id=lead.id) }}" class="btn btn-warning">Editar</a>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
