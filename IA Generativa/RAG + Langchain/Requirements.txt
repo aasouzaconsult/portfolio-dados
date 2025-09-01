@@ -1,0 +1,16 @@
+streamlit==1.29.0
+langchain==0.1.0
+langchain-community==0.0.13
+langchain-openai==0.0.8
+langchain-huggingface==0.0.1
+langchain-ollama==0.1.0
+langchain-groq==0.1.0
+faiss-cpu==1.7.4
+torch==2.1.0
+transformers==4.36.0
+sentence-transformers==2.2.2
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+streamlit-chat==0.1.1
+psutil==5.9.0
+numpy==1.24.3
