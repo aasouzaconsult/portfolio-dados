@@ -2,7 +2,7 @@
 
 ## 📋 Descrição do Projeto
 
-Sistema de CRM (*Customer Relationship Management*) desenvolvido especificamente para gestão de leads educacionais da **Zouza School - Sistemas Escolares**. Mais informações sobre a <a href="https://zouza-school-sistemas.netlify.app/" target="_blank" rel="noopener noreferrer">Zouza School</a>.
+Sistema de CRM (*Customer Relationship Management*) desenvolvido especificamente para gestão de leads educacionais da **Zouza School - Sistemas Escolares**. Mais informações sobre a <a href="https://zouza-school-sistemas.netlify.app/" target="_blank">Zouza School</a>.
 
 O projeto resolve problemas críticos de visibilidade e comunicação na gestão de leads, automatizando processos através de **Inteligência Artificial Generativa (Google Gemini)**.
 
