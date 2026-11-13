@@ -1,11 +1,11 @@
 ![Extraindo valor em dados](assets/extraindo-valor-em-dados.png)
 
 # Alex Souza
-## Dados, Machine Learning e IA Generativa
+## Liderança em Dados, IA e Educação
 
 **Da pergunta de negócio à análise. Da análise à aplicação.**
 
-Sou **cientista de dados e professor**. Neste portfólio, compartilho projetos que conectam análise de dados, desenvolvimento de modelos e construção de aplicações, com explicações para quem também quer aprender a fazer.
+Atuo em **liderança em dados** e sou **professor**. Neste portfólio, compartilho projetos e materiais que conectam dados, aplicações de IA e necessidades de negócio, com explicações para quem também quer aprender a fazer.
 
 Minha trajetória passa por dashboards em **Power BI e Tableau**, modelos de **Machine Learning com Python** e aplicações de **IA Generativa**, incluindo consulta a documentos, agentes e integração com bancos de dados.
 
@@ -122,7 +122,7 @@ As configurações de execução variam entre os projetos. Aplicações com APIs
 
 Meu interesse está em conectar dados a problemas que as pessoas precisam resolver — e tornar esse caminho compreensível para quem está aprendendo.
 
-Como cientista de dados e professor, compartilho aqui estudos que vão da exploração de uma base à construção de modelos e aplicações. A proposta é mostrar as escolhas, as ferramentas e as possibilidades de uso em cada contexto.
+Minha atuação reúne **liderança em dados e ensino**, conectando a visão de negócio à aplicação prática de dados e IA. Compartilho aqui estudos e materiais didáticos que vão da exploração de uma base à construção de modelos e aplicações, para apoiar o aprendizado e a discussão das escolhas em cada contexto.
 
 **Quer conversar sobre projetos de dados, aplicações de IA Generativa ou capacitação de equipes?** Entre em contato pelo [LinkedIn](https://www.linkedin.com/in/alex-souza/).
 
