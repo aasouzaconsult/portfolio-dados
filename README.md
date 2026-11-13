@@ -1,3 +1,5 @@
+![Extraindo valor em dados](assets/extraindo-valor-em-dados.png)
+
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/08/alexsouza.png" alt="Alex Souza — cientista de dados e professor" width="220" align="right">
 
 # Alex Souza
@@ -128,4 +130,4 @@ Como cientista de dados e professor, compartilho aqui estudos que vão da explor
 
 ### Conteúdo e conexões
 
-[LinkedIn](https://www.linkedin.com/in/alex-souza/) · [YouTube](https://www.youtube.com/@alexsouzamsc) · [Instagram](https://www.instagram.com/alexsouzamsc/) · [Blog técnico](https://medium.com/blog-do-zouza) · [Kaggle](https://www.kaggle.com/aasouzaconsult/notebooks) · [Currículo Lattes](http://lattes.cnpq.br/3318149614519892) · [X](https://x.com/alexsouza_sql) · [Sites e materiais](https://linktr.ee/sites_alexsouza)
+[LinkedIn](https://www.linkedin.com/in/alex-souza/) · [YouTube](https://www.youtube.com/@alexsouzamsc) · [Instagram](https://www.instagram.com/alexsouzamsc/) · [Blog técnico](https://medium.com/blog-do-zouza) · [Kaggle](https://www.kaggle.com/aasouzaconsult/notebooks) · [Currículo Lattes](http://lattes.cnpq.br/3318149614519892) · [X](https://x.com/alexsouza_sql)
