@@ -1,7 +1,5 @@
 ![Extraindo valor em dados](assets/extraindo-valor-em-dados.png)
 
-<img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/08/alexsouza.png" alt="Alex Souza — cientista de dados e professor" width="220" align="right">
-
 # Alex Souza
 ## Dados, Machine Learning e IA Generativa
 
