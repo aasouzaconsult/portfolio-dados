@@ -1,10 +1,36 @@
+<div align="center">
+
 # Projeto para Portfólio de Analista de Dados (Exemplo)
+
+**PostgreSQL · Python · Data Warehouse · Power BI**
+
+</div>
 
 ## Projeto: Gerenciamento de Vendas com Data Warehouse e Dashboards
 
 Este projeto foi desenvolvido para demonstrar as principais etapas do trabalho de um Analista de Dados, desde a criação de um banco de dados até a entrega de insights em forma de dashboards. O foco é em um cenário fictício de uma empresa de vendas. Abaixo estão as fases detalhadas do projeto.
 
+## 🧭 Navegue pelo projeto
+
+Acompanhe as seis fases do exemplo, da preparação do banco à entrega das análises.
+
+| Fase | Conteúdo |
+| --- | --- |
+| [**1 · Banco de dados**](#fase-1) | Estrutura relacional, criação e população das tabelas. |
+| [**2 · Entendimento do negócio**](#fase-2) | Entrevista com o gerente, KPIs e dimensões. |
+| [**3 · Análise exploratória**](#fase-3) | Estatísticas, visualizações e investigação dos dados. |
+| [**4 · Data Warehouse**](#fase-4) | Modelo dimensional e scripts do Star Schema. |
+| [**5 · Visualização**](#fase-5) | Exemplos em Python e demonstração no Power BI. |
+| [**6 · Entrega ao cliente**](#fase-6) | Feedback, CRISP-DM e evolução por MVP. |
+
+[📊 Abrir o exemplo no Power BI — PBIX](portfolio.pbix)
+
+> **Como ler:** use o índice para acessar uma fase. Os blocos de código podem ser expandidos para consultar os exemplos completos.
+
+
 ---
+
+<a id="fase-1"></a>
 
 ## Fase 1: Criação do Banco de Dados
 
@@ -19,6 +45,9 @@ Criamos um banco de dados relacional (utilizamos o SGBD: [PostgreSQL](https://ww
 > **Nota:** Nesta simulação, criamos o banco de dados para fins didáticos e de demonstração. No cenário real, o Analista de Dados normalmente recebe um banco de dados já existente, podendo ser necessário realizar etapas de limpeza e transformação dos dados antes de começar a análise.
 
 ### Script SQL de Criação e População de Tabelas
+<details>
+<summary><strong>💻 Ver código SQL completo</strong></summary>
+
 ```sql
 -- Criando o Banco de dados
 CREATE DATABASE portfolio;
@@ -139,12 +168,16 @@ INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, TotalItem) VALUES
 
 ```
 
+</details>
+
 ### Desenho da Modelagem Relacional
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/screenshot_2.png" alt="Modelagem Relacional - PostgreSQL" width="650"/>
 
 Agora que temos a nossa base de dados de estudo, na próxima fase irei simular uma entrevista com um Gerente de Vendas.
 
 ---
+
+<a id="fase-2"></a>
 
 ## Fase 2: Simulação de Entrevista com o Gerente de Vendas
 
@@ -205,6 +238,8 @@ Agora, o próximo passo é entender os dados... ver padrões nestes dados, vê a
 
 ---
 
+<a id="fase-3"></a>
+
 ## Fase 3: Análise Exploratória de Dados (EDA)
 
 ### Contextualização
@@ -213,6 +248,9 @@ Nesta fase, realizamos uma análise exploratória para entender a estrutura, a q
 Observação: *Aqui por ser uma demonstração apenas, não pegamos os dados do BD, apenas uma amostra de lá! Mas no dia a dia, sim! Devem vir do BD.*
 
 ### Código em Python
+
+<details>
+<summary><strong>💻 Ver código Python completo</strong></summary>
 
 ```python
 import pandas as pd
@@ -283,12 +321,16 @@ plt.ylabel('Receita Total')
 plt.show()
 ```
 
+</details>
+
 **Abaixo, um exemplo de um Boxplot, em busca de encontrar *outliers***:
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/boxplor.png" alt="Exemplo - BoxPlot" width="650"/>
 
 Essa análise fornece *insights* iniciais que auxiliam na modelagem do Data Warehouse e na definição de KPIs relevantes. Agora que já vimos como esta nossa base de dados, entendemos um poucos os dados, vamos para a criação do nosso *Data Warehouse*.
 
 ---
+
+<a id="fase-4"></a>
 
 ## Fase 4: Criação do Data Warehouse
 
@@ -307,6 +349,9 @@ Optamos por um **Star Schema**, que oferece simplicidade e eficiência na consul
   - `DimTempo`
 
 ### Script de Criação e População de Tabelas
+<details>
+<summary><strong>💻 Ver código SQL completo</strong></summary>
+
 ```sql
 -- Criação das tabelas Dimensionais
 
@@ -354,6 +399,8 @@ FROM ItemVenda i
 JOIN Venda v ON i.VendaID = v.VendaID;
 ```
 
+</details>
+
 Desenho da Modelagem Dimensional:
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/dimensional.png" width="650"/>
@@ -364,6 +411,8 @@ Mais informações sobre modelagem dimensional, [confira aqui!](https://medium.c
 
 
 ---
+
+<a id="fase-5"></a>
 
 ## Fase 5: Visualização de Dados
 
@@ -386,6 +435,9 @@ Para criar dashboards e relatórios, utilizamos uma combinação de ferramentas 
 1. **Receita total por mês:** Análise mensal das receitas, permitindo identificar sazonalidades.
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-1.png" width="650"/>
+
+<details>
+<summary><strong>💻 Ver código Python completo</strong></summary>
 
 ```python
 import pandas as pd
@@ -429,9 +481,14 @@ plt.tight_layout()
 plt.show()
 ```
 
+</details>
+
 2. **Desempenho dos vendedores comparado às metas:** Gráficos que destacam vendedores com melhor performance e os que estão abaixo da meta.
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-2.png" width="650"/>
+
+<details>
+<summary><strong>💻 Ver código Python completo</strong></summary>
 
 ```python
 # Simulando dados de vendas por vendedor e metas
@@ -464,9 +521,14 @@ plt.tight_layout()
 plt.show()
 ```
 
+</details>
+
 3. **Produtos mais vendidos por categoria:** Identificação de produtos e categorias mais lucrativos.
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-3.png" width="650"/>
+
+<details>
+<summary><strong>💻 Ver código Python completo</strong></summary>
 
 ```python
 # Simulando dados de produtos e categorias
@@ -502,9 +564,14 @@ plt.tight_layout()
 plt.show()
 ```
 
+</details>
+
 4. **Mapa de vendas por cidade:** Visualização geográfica que destaca regiões de maior venda.
 
 <img src="https://blogdozouza.wordpress.com/wp-content/uploads/2025/01/output-4.png" width="650"/>
+
+<details>
+<summary><strong>💻 Ver código Python completo</strong></summary>
 
 ```python
 # Simulando dados de vendas por cidade (tabela de cliente)
@@ -537,6 +604,8 @@ mapa.save("mapa_vendas.html")
 mapa
 ```
 
+</details>
+
 ### Um exemplo usando Power BI
 Observem que no Power BI, ou qualquer outra ferramenta especifíca de visualização de dados, a disposição e visual fica bem mais atrativa e interativa. Sempre comento que devemos usar as ferramentas certas na hora certa!!! Fiz acima no Python para demonstrar passo a passo, mas no dia a dia a visualização é feita utilizando ferramentas de visualização de dados, como por exemplo, o [Power BI](https://www.microsoft.com/pt-br/power-platform/products/power-bi).
 
@@ -550,6 +619,8 @@ Exemplo de um visual simples no Power BI ([Download do PBIX](https://github.com/
 
 
 ---
+
+<a id="fase-6"></a>
 
 ## Fase 6: Entrega ao Cliente
 
@@ -583,3 +654,9 @@ O sucesso dessa fase é medido pelo impacto das análises no processo decisório
 ---
 
 Este portfólio demonstra como um Analista de Dados pode transformar dados brutos em insights valiosos por meio de práticas estruturadas e ferramentas avançadas. Os scripts e códigos aqui apresentados estão disponíveis no [GitHub](https://github.com/aasouzaconsult/portfolio-dados/tree/master/Projeto%20de%20An%C3%A1lise%20de%20Dados%20-%20Exemplo).
+
+---
+
+**Alex Souza — liderança em dados e professor**
+
+[Portfólio](https://omestredosdados.com.br/portfolio) · [Telegram — Mestre dos Dados](https://t.me/mestredosdados) · [↑ Voltar ao início](#projeto-para-portfólio-de-analista-de-dados-exemplo)
